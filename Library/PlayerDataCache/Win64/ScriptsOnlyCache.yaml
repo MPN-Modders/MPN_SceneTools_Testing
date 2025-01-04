@@ -1,0 +1,129 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Assembly-CSharp.dll:
+    - Dev_Cam
+    - Marker_Player
+    - Marker_Waypoint
+    - ProxyObj_Cover
+    - ProxyObj_Door
+    - ProxyObj_Locker
+    - ProxyObj_Playground
+    - RoomObj
+    - SceneRules
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+  sceneClasses:
+    Assets/Scenes/SamplePlayground_PG.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9908}
+    - Class: 114
+      Script: {instanceID: 10132}
+    - Class: 114
+      Script: {instanceID: 10140}
+    - Class: 114
+      Script: {instanceID: 10466}
+    - Class: 114
+      Script: {instanceID: 10526}
+    - Class: 114
+      Script: {instanceID: 10612}
+    - Class: 114
+      Script: {instanceID: 11260}
+    - Class: 114
+      Script: {instanceID: 11342}
+    - Class: 114
+      Script: {instanceID: 11390}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+  scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 2c34e74e0b19e87c885f24712eb33dc2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProxyObj_Door
+  - hash:
+      serializedVersion: 2
+      Hash: e8e03a3cb8f40202973264e163caa952
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProxyObj_Playground
+  - hash:
+      serializedVersion: 2
+      Hash: c8b69efc5d805c3d044c5a4df0002b93
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneRules
+  - hash:
+      serializedVersion: 2
+      Hash: faadcff1c8b710c90c500e22d83afbcf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RoomObj
+  - hash:
+      serializedVersion: 2
+      Hash: 42b1fae8e7b66a8ee35e3c7388bd2314
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Marker_Waypoint
+  - hash:
+      serializedVersion: 2
+      Hash: e8312def4965084ed1f42136a86c6ec1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProxyObj_Locker
+  - hash:
+      serializedVersion: 2
+      Hash: b4a9e857975f890b5f0b2a44e58243f9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Dev_Cam
+  - hash:
+      serializedVersion: 2
+      Hash: 28d0405bccb1ea759afb4d784b29fe48
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Marker_Player
+  - hash:
+      serializedVersion: 2
+      Hash: 9dfcec23f921bbcfe2a4475da2891725
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProxyObj_Cover
+  platform: 19
+  scenePathNames:
+  - Assets/Scenes/SamplePlayground_PG.unity
+  playerPath: C:/Users/swain/AppData/LocalLow/Gibbing Tree/Madness Project Nexus SceneTools/SceneObjs/mycustomscene
