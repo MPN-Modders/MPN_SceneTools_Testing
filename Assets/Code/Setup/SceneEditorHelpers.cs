@@ -64,7 +64,7 @@ public enum BehaviorList
     LeapPursue, NoCombat, Teleport_Panic, NeverHeavyH2H, NoMeleeFlocking, NoAttack, JamAttack, UsePatrolPath, UseGuardPosts, XRay, MagicWandAllAutos, ChargeUpMax, IgnoreSiege, SpreadsJoy, 
 };
 
-public enum ColorCategories { None, Green, Red, Blue, Highlight, Cyan, Objective, Execute, Prize, ItemGhost, StoryInfo, White }
+public enum SelectionColors { Select, Highlight, Invalid, Important, NONE = 100 };
 
 public enum InteractiveEvents
 {

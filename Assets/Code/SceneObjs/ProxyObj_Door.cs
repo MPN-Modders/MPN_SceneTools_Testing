@@ -2,7 +2,12 @@
 
 public class ProxyObj_REPOSITORY : ProxyObj_Base
 {
-
+    [Tooltip("Door starts locked. Can be unlocked with the SetDoorLock Event Action.")]
+    public bool Locked = false;
+    [Tooltip("Characters must have this Vocation to use the door.")]
+    public VocationList VocationRequired = VocationList.NONE;
+    [Tooltip("Characters may not have this Vocation to use the door.")]
+    public VocationList VocationProhibit = VocationList.NONE;
 }
 
 public class ProxyObj_Door : ProxyObj_REPOSITORY
@@ -11,12 +16,6 @@ public class ProxyObj_Door : ProxyObj_REPOSITORY
 
     [Tooltip("Won't be used to for random door selection, as per wave spawners, Arena stages, and Zone_Dead.")]
     public bool DisableSpawn = false;
-
-    [Tooltip("Characters must have this Vocation to use the door.")]
-    public VocationList VocationRequired = VocationList.NONE;
-    [Tooltip("Characters may not have this Vocation to use the door.")]
-    public VocationList VocationProhibit = VocationList.NONE;
-
 
     public enum ProxyType
     {
@@ -60,11 +59,11 @@ public class ProxyObj_Door : ProxyObj_REPOSITORY
 
     }
 
-    [Header("  == CONNECTIONS == ")][Space(10)]
+    [Header("  == CONNECTIONS == ")]
+    [Space(10)]
     public ProxyObj_Door LinkedDoor;
     [Tooltip("The scene the game will load when the player uses this door. \n\nNOTE: Set this to \"victory\" to let the player win when using this door in a Story stage.")]
     public string LinkedScene;
     [Tooltip("The SerialNumber of the door the player will exit from in the LinkedScene.")]
     public string LinkedSceneEntrance;
 }
-

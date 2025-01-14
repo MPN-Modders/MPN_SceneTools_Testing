@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 
 
-
 public class ProxyObj_Interact : ProxyObj
 {
     public ProxyType Type;
@@ -41,6 +40,8 @@ public class ProxyObj_Interact : ProxyObj
     public bool ClearDefaultTasks = false; 
     [Tooltip("If TRUE, this object isn't even usable if you don't qualify.")]
     public bool CannotUseIfUnqualified = false;
+    [Tooltip("If TRUE, the Task will not complete until the animation tells it to (it MUST have the GrabInteractive_AnimEvent event on the animation!")]
+    public bool WaitForUserAnim = false;
     [Space(5)]
     [Tooltip("The Filename of Characters allowed to interact.")]
     public List<string> AllowedCharacters = new List<string>();
@@ -90,7 +91,7 @@ public class ProxyObj_Interact : ProxyObj
         [Tooltip("On completion of this Task, the Interactive will run all Actions on its TaskEvent. ")]
         public bool RunTaskEvent;
 
-        [Tooltip("Randomly displayed popup text when the Task is completed.")]
+        [Tooltip("Randomly displayed popup text when the Task is completed.")][TextArea(2,5)]
         public string[] PopupComplete;
     }
     [System.Serializable]
@@ -101,7 +102,7 @@ public class ProxyObj_Interact : ProxyObj
         public string HighlightText;
         [Tooltip("For Interactives with a TimeGoal, this displays while interacting. The game adds a \"...\" to the end of this automatically.")]
         public string UseText;
-        public ColorCategories UseColor;
+        public SelectionColors UseColor;
         [Tooltip("The sprite that appears over the Interactive when this Task is top Priority. ")]
         public string Icon;
 
@@ -131,4 +132,3 @@ public class ProxyObj_Interact : ProxyObj
    
  
 }
-
