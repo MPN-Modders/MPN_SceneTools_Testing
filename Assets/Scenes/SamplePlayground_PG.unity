@@ -999,6 +999,11 @@ PrefabInstance:
       propertyPath: ApplyWindowMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4872709566416109080, guid: 1254515de1154dc4d94f867e93d790d8,
+        type: 3}
+      propertyPath: ScaffoldLegs
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7589372200666429262, guid: 1254515de1154dc4d94f867e93d790d8,
         type: 3}
       propertyPath: m_IsActive
@@ -1007,8 +1012,14 @@ PrefabInstance:
     - target: {fileID: 8819134936563280921, guid: 1254515de1154dc4d94f867e93d790d8,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1320381384438787172, guid: 1254515de1154dc4d94f867e93d790d8,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 388625419605351210, guid: e73e1ca91459f1d4884309dd28f3ace6,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1254515de1154dc4d94f867e93d790d8, type: 3}
 --- !u!1001 &1268469374
@@ -1251,13 +1262,13 @@ PrefabInstance:
     - target: {fileID: 2245097061036157557, guid: dc1210ec12dc2e14599778aa81f54c4a,
         type: 3}
       propertyPath: Type
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5471192855677797759, guid: dc1210ec12dc2e14599778aa81f54c4a,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: -6855177542233452314, guid: 1031c52adae0ffb47a07bfe02eacd583,
+      objectReference: {fileID: -5716978555686370407, guid: 1031c52adae0ffb47a07bfe02eacd583,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc1210ec12dc2e14599778aa81f54c4a, type: 3}
@@ -2402,6 +2413,16 @@ PrefabInstance:
         type: 3}
       propertyPath: Contents.Array.data[3]
       value: R_Deagle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8719193562614825414, guid: 48d358e4ac09f7043b85e5078fb393ca,
+        type: 3}
+      propertyPath: TaskEvent
+      value: NewEvent1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8719193562614825414, guid: 48d358e4ac09f7043b85e5078fb393ca,
+        type: 3}
+      propertyPath: LockerEvent
+      value: NewEvent1
       objectReference: {fileID: 0}
     - target: {fileID: 3126470425326608228, guid: 48d358e4ac09f7043b85e5078fb393ca,
         type: 3}

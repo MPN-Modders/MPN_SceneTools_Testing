@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-public class ProxyObj_Interact : ProxyObj
+public class ProxyObj_Interact : ProxyObj_Base
 {
     public ProxyType Type;
 

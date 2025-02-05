@@ -54,8 +54,8 @@ public class Proxy_Editor : Editor
 
 				// Fallback
 				mf.sharedMesh = GetList()[0].Mesh;
-
-			} catch
+			}
+			catch
             {
 				// FAIL: You may have removed the mesh 
             }
@@ -111,6 +111,17 @@ public class ProxyObj_Interact_Editor : Proxy_Editor
 	protected override bool IsTypeMatch(EditorStorage.MeshDisplay meshList, string inTypeName)
 	{
 		return ((EditorStorage.MeshDisplay_Interactives)meshList).Type.ToString() == inTypeName;
+	}
+
+}
+[CanEditMultipleObjects]
+[CustomEditor(typeof(ProxyObj_Togglable))]
+public class ProxyObj_Togglable_Editor : Proxy_Editor
+{
+	protected override List<EditorStorage.MeshDisplay> GetList() { return editorStorage.Togglables.ConvertAll(o => (EditorStorage.MeshDisplay)o); }
+	protected override bool IsTypeMatch(EditorStorage.MeshDisplay meshList, string inTypeName)
+	{
+		return ((EditorStorage.MeshDisplay_Togglables)meshList).Type.ToString() == inTypeName;
 	}
 
 }
@@ -193,6 +204,49 @@ public class RoomObj_Editor : Editor
 		RenderSettings.fogMode = thisRoom.FogMode;
 		RenderSettings.fogStartDistance = thisRoom.FogLinearStartEnd.x;
 		RenderSettings.fogEndDistance = thisRoom.FogLinearStartEnd.y;
+	}
+
+}
+
+
+[CanEditMultipleObjects]
+[CustomEditor(typeof(ProxyObj_Playground))]
+public class ProxyObj_Playground_Editor : Editor
+{
+	protected EditorStorage editorStorage;
+
+	protected SerializedProperty value;
+	void OnEnable()
+	{
+		value = serializedObject.FindProperty("ScaffoldLegs");
+	}
+	public override void OnInspectorGUI()
+	{
+		bool previousValue = value.boolValue;
+
+		base.OnInspectorGUI();
+
+		if (previousValue != value.boolValue)
+		{
+			UpdateMesh();
+		}
+	}
+	void UpdateMesh()
+	{
+		editorStorage = editorStorage ?? Resources.Load("SceneTools/EditorStorage") as EditorStorage;
+
+		foreach (Object t in serializedObject.targetObjects)
+		{
+			try
+			{
+				MeshFilter mf = ((ProxyObj)t).GetComponent<MeshFilter>();
+				mf.sharedMesh = editorStorage.ControlRoom[(t as ProxyObj_Playground).ScaffoldLegs ? 1 : 0];
+			}
+			catch
+			{
+				// FAIL: You may have removed the mesh?
+			}
+		}
 	}
 
 }

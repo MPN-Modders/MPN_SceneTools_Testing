@@ -1,23 +1,30 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Cover_Point
+    - CustomObj_Cover
+    - CustomObj_Interact
+    - CustomObj_Togglable
     - Dev_Cam
     - Marker_Player
     - Marker_Waypoint
     - ProxyObj_Cover
     - ProxyObj_Door
+    - ProxyObj_Interact
     - ProxyObj_Locker
     - ProxyObj_Playground
     - RoomObj
-    - SceneRules
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
   sceneClasses:
     Assets/Scenes/SamplePlayground_PG.unity:
     - Class: 1
@@ -38,9 +45,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -51,27 +68,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10132}
     - Class: 114
-      Script: {instanceID: 10140}
-    - Class: 114
       Script: {instanceID: 10466}
     - Class: 114
-      Script: {instanceID: 10526}
+      Script: {instanceID: 10482}
     - Class: 114
-      Script: {instanceID: 10612}
+      Script: {instanceID: 10528}
     - Class: 114
-      Script: {instanceID: 11260}
+      Script: {instanceID: 10614}
     - Class: 114
-      Script: {instanceID: 11342}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 11390}
+      Script: {instanceID: 11324}
+    - Class: 114
+      Script: {instanceID: 11344}
+    - Class: 114
+      Script: {instanceID: 11394}
+    - Class: 114
+      Script: {instanceID: 13602}
+    - Class: 114
+      Script: {instanceID: 13608}
+    - Class: 114
+      Script: {instanceID: 20250}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 221
+      Script: {instanceID: 0}
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 2c34e74e0b19e87c885f24712eb33dc2
+      Hash: 724ad03dc54ac516dc675ba68fb437c9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ProxyObj_Door
@@ -83,16 +110,16 @@ ScriptsOnlyBuild:
     className: ProxyObj_Playground
   - hash:
       serializedVersion: 2
-      Hash: c8b69efc5d805c3d044c5a4df0002b93
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SceneRules
-  - hash:
-      serializedVersion: 2
       Hash: faadcff1c8b710c90c500e22d83afbcf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RoomObj
+  - hash:
+      serializedVersion: 2
+      Hash: cff317715ca4faedb1f65bffd1f49516
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CustomObj_Togglable
   - hash:
       serializedVersion: 2
       Hash: 42b1fae8e7b66a8ee35e3c7388bd2314
@@ -101,7 +128,7 @@ ScriptsOnlyBuild:
     className: Marker_Waypoint
   - hash:
       serializedVersion: 2
-      Hash: e8312def4965084ed1f42136a86c6ec1
+      Hash: 2e1c684d975d54140dad695e2ae23ad6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ProxyObj_Locker
@@ -111,6 +138,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Dev_Cam
+  - hash:
+      serializedVersion: 2
+      Hash: 9363799f0cb0f9b8d5233ea4345d8090
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProxyObj_Interact
   - hash:
       serializedVersion: 2
       Hash: 28d0405bccb1ea759afb4d784b29fe48
@@ -123,6 +156,24 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ProxyObj_Cover
+  - hash:
+      serializedVersion: 2
+      Hash: 4504e481e7b4903b5a914714c62862f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CustomObj_Cover
+  - hash:
+      serializedVersion: 2
+      Hash: 7432a77fa8fac4bc9f999e1a5b711dfc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Cover_Point
+  - hash:
+      serializedVersion: 2
+      Hash: 741a18cea94e5d7dcc022b49f58d9734
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CustomObj_Interact
   platform: 19
   scenePathNames:
   - Assets/Scenes/SamplePlayground_PG.unity

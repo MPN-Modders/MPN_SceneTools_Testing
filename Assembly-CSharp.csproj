@@ -64,6 +64,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Code\SceneObjs\AnimEvents_Interact.cs" />
+    <Compile Include="Assets\Code\SceneObjs\Cover_Point.cs" />
+    <Compile Include="Assets\Code\SceneObjs\CustomObj_Cover.cs" />
+    <Compile Include="Assets\Code\SceneObjs\CustomObj_Interact.cs" />
+    <Compile Include="Assets\Code\SceneObjs\CustomObj_Togglable.cs" />
     <Compile Include="Assets\Code\SceneObjs\Marker_Character.cs" />
     <Compile Include="Assets\Code\SceneObjs\Marker_Item.cs" />
     <Compile Include="Assets\Code\SceneObjs\Marker_Player.cs" />
@@ -74,6 +79,7 @@
     <Compile Include="Assets\Code\SceneObjs\ProxyObj_Interact.cs" />
     <Compile Include="Assets\Code\SceneObjs\ProxyObj_Locker.cs" />
     <Compile Include="Assets\Code\SceneObjs\ProxyObj_Playground.cs" />
+    <Compile Include="Assets\Code\SceneObjs\ProxyObj_Togglable.cs" />
     <Compile Include="Assets\Code\SceneObjs\RoomObj.cs" />
     <Compile Include="Assets\Code\SceneObjs\SceneRules.cs" />
     <Compile Include="Assets\Code\SceneObjs\Zone_Camera.cs" />
