@@ -64,6 +64,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Code\Addons\CustomAddon_Locker.cs" />
+    <Compile Include="Assets\Code\Addons\CustomAddon_Vendor.cs" />
+    <Compile Include="Assets\Code\Addons\Remover_ArenaUpgrade.cs" />
+    <Compile Include="Assets\Code\Addons\Remover_Difficulty.cs" />
+    <Compile Include="Assets\Code\Addons\Remover_Origin.cs" />
+    <Compile Include="Assets\Code\Addons\Remover_Random.cs" />
+    <Compile Include="Assets\Code\Addons\Remover_WaveCheckpoint.cs" />
+    <Compile Include="Assets\Code\Addons\Remover_WorldChange.cs" />
     <Compile Include="Assets\Code\SceneObjs\AnimEvents_Interact.cs" />
     <Compile Include="Assets\Code\SceneObjs\Cover_Point.cs" />
     <Compile Include="Assets\Code\SceneObjs\CustomObj_Cover.cs" />

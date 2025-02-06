@@ -74,3 +74,9 @@ public enum InteractiveEvents
     Story_LevelSelect = 70,
     Holiday = 100
 };
+
+public enum GameDifficulty { Easy, Normal, Hard, Madness };
+public enum Currency { None = -100, Cash, Tokens }
+public enum MenuTypes { None = -100, Equipped = 0, Storage, Sell, Buy, Skills, Hairstyles, Workbench, Colorizer, SkinPicker, Swatches }
+public enum UpgradeValues { HirelingCap, Clonetanks, MinionLevel, HirelingLevelCap, NONE = 100 }
+
