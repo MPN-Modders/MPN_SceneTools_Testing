@@ -71,7 +71,7 @@ public class ProxyObj_Interact : ProxyObj_Base
 
     public enum ProxyType
     {
-        EMPTY = 0,
+        EMPTY = -1,
         
         BoxLift = 20, Button, Buttons, Elevator,
         Monitor = 60, Laptop, Console1, Console2, Console2_Blue, Console3, Console3_Blue, Console4, Console5, Console5_Blue, ConsoleAsylum, ConsoleOffice,

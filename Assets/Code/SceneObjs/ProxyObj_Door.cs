@@ -19,45 +19,17 @@ public class ProxyObj_Door : ProxyObj_REPOSITORY
 
     public enum ProxyType
     {
+        EMPTY = -1,
         // Cat: Doors
-        Standard = 0,
-        Enemy,
-        Side,
-        FourthWall,
-        Swing,
-        Heavy,
-
+        Standard = 0, Enemy, Side, FourthWall, Swing, Heavy,
         // CAT: Doors Big
-        G03LM = 100,
-        Elevator,
-        Garage,
-        Double,
-
+        G03LM = 100, Elevator, Garage, Double,
         // CAT: Spawners
-        Manhole = 200,
-        FloorGrate,
-        Fissure,
-        FissureGlow,
-        Ground,
-        GroundWood,
-        Vent,
-        VentDrop,
-        VentSide,
-        VentFan,
-        ZedFan,
-        Rapel,
-
+        Manhole = 200, FloorGrate, Fissure, FissureGlow, Ground, GroundWood, Vent, VentDrop, VentSide, VentFan, ZedFan, Rapel,
         // CAT: Automatic
-        Transition = 500,
-        Instant_x3,
-        DropIn,
-        DropIn_x5,
-        Launched_x3,
-        Ledge,
-        Ledge_x3,
-        Rail,
-
+        Transition = 500, Instant_x3, DropIn, DropIn_x5, Launched_x3, Ledge, Ledge_x3, Rail,
     }
+
 
     [Header("  == CONNECTIONS == ")]
     [Space(10)]

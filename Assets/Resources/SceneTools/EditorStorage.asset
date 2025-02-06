@@ -19,6 +19,9 @@ MonoBehaviour:
     type: 3}
   Doors:
   - name: ' > Standard'
+    Mesh: {fileID: 2635522498378792772, guid: 1031c52adae0ffb47a07bfe02eacd583, type: 3}
+    Type: -1
+  - name: ' > Standard'
     Mesh: {fileID: 3417675997412986688, guid: 1031c52adae0ffb47a07bfe02eacd583, type: 3}
     Type: 0
   - name: ' > Enemy'
@@ -180,7 +183,7 @@ MonoBehaviour:
     Mesh: {fileID: -71495351801911237, guid: 1031c52adae0ffb47a07bfe02eacd583, type: 3}
     Type: 100
   Interactives:
-  - name: ' > EMPTY'
+  - name: ' > 0'
     Mesh: {fileID: -520645096794329548, guid: 8a29cdd974b2072459c94ddd23c7243b, type: 3}
     Type: 0
   - name: ' > BoxLift'
