@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class CustomAddon_Vendor : MonoBehaviour  // PLACE ON AN INTERACT
+public class CustomAddon_Vendor : SceneObj 
 {
     [Header("   !! PLACE ON CUSTOM INTERACTIVE !!")]
     [Space(20)]
@@ -9,8 +9,8 @@ public class CustomAddon_Vendor : MonoBehaviour  // PLACE ON AN INTERACT
     [Tooltip("The name of this \"Store\" to appear at the top of the screen.")]
     public string Name = "Buy";
     [Tooltip("The style of Vendor to use.")]
-    public UI_PlayerMenu.MenuTypes Type = UI_PlayerMenu.MenuTypes.Buy;
-    public Market_Main.Currency UseCurrency = Market_Main.Currency.Cash;
+    public MenuTypes Type = MenuTypes.Buy;
+    public Currency UseCurrency = Currency.Cash;
     [Tooltip("Individual items cannot be removed by purchasing them (making them infinite).")]
     public bool AmShoppingList = true;
     [Tooltip("Item's Tier will be used when filling this Vendor.")]

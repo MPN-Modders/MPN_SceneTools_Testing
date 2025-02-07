@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+using UnityEngine;
+
 public class SceneEditorHelpers
 {
     // A collection of values that should not appear as Scripts, and a place to
@@ -7,22 +9,23 @@ public class SceneEditorHelpers
 }
 
 // INACCESIBLE PARENT CLASSES
-
-public class Marker : MonoBehaviour
+public class SceneObj : MonoBehaviour
 {
-    [Tooltip("Used by the Event System to target this MarkerObj.")]
-    public string SerialNumber = ""; // NOTE: UNUSED UNTIL EVENT SYSTEM IS IMPLEMENTED // 
+    public string SerialNumber = "";
 }
-
-public class ProxyObj : MonoBehaviour
+public class Marker : SceneObj
 {
-    [Tooltip("Used by the Event System to target this ProxyObj.")]
-    public string SerialNumber = ""; // NOTE: UNUSED UNTIL EVENT SYSTEM IS IMPLEMENTED // 
+}
+public class ProxyObj : SceneObj
+{
 }
 public class ProxyObj_Base : ProxyObj
 {
-    // Non-Room Proxies
+    // For Non-Rooms
 }
+
+
+// ENUMS GO HERE
 
 
 public enum AlertStatus { Unaware, Hunting, Combat, Match = 100 }

@@ -65,6 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\Addons\CustomAddon_Locker.cs" />
+    <Compile Include="Assets\Code\Addons\CustomAddon_Platform.cs" />
+    <Compile Include="Assets\Code\Addons\CustomAddon_ToggleAutomator.cs" />
     <Compile Include="Assets\Code\Addons\CustomAddon_Vendor.cs" />
     <Compile Include="Assets\Code\Addons\Remover_ArenaUpgrade.cs" />
     <Compile Include="Assets\Code\Addons\Remover_Difficulty.cs" />

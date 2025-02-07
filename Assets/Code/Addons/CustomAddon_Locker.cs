@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class CustomAddon_Locker : MonoBehaviour  // PLACE ON AN INTERACT
+public class CustomAddon_Locker : SceneObj
 {
     [Header("   !! PLACE ON CUSTOM INTERACTIVE !!")]
     [Space(20)]

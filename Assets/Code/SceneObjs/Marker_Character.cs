@@ -39,7 +39,11 @@ public class Marker_DataAssigner : Marker
     public AlertStatus Alertness;
 
     [SerializeField]
+    [Space(10)]
     public SpawnChatter_STP Chatter;
+
+    [Space(10)]
+    public PatrolParameters_STP PatrolParams = new PatrolParameters_STP();
 }
 
 [System.Serializable]
@@ -52,4 +56,22 @@ public class SpawnChatter_STP
     public float SecondsDelay;
     public bool Narrative = false;
     public bool PlayInCombat = true;
+}
+
+
+[System.Serializable]
+public class PatrolParameters_STP
+{
+    public bool NeverWander = false;
+    public bool FollowLeader = true;
+    public PatrolPath_STP[] PatrolPaths = new PatrolPath_STP[0];
+}
+[System.Serializable]
+public class PatrolPath_STP
+{
+	[HideInInspector] public string name = "Patrol Path";
+    public Marker_Waypoint[] PathPoints = new Marker_Waypoint[0];
+    [Tooltip("If TRUE, the exact path used to get from the first to the last Point will be duplicated and reversed, allowing the Squad to return the way they came.")]
+    public bool GenerateReturnPath = true;
+    public bool LoopPath = true;
 }
