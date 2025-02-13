@@ -6,7 +6,7 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Animator Override Controller
+  m_Name: Togglable_SampleOverride
   m_Controller: {fileID: 9100000, guid: a51c6be40ca6a4147a3cea5400e3968a, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: 49b6718726c8e9e42b969a1e834fe835, type: 2}

@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SerialNumber: 
-  Type: 100
+  Type: -1
   StartUsed: 0
   InteractRange: 3
   IgnoreUserSnap: 0
@@ -221,8 +221,8 @@ MonoBehaviour:
     RunTaskEvent: 0
     PopupComplete:
     - You did it!
-    HighlightText: Mod
-    UseText: Modding
+    HighlightText: Use
+    UseText: Using
     UseColor: 1
     Icon: 
     TimeGoal: 1

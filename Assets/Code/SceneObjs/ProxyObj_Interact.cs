@@ -79,6 +79,8 @@ public class ProxyObj_Interact : ProxyObj_Base
         Switch = 100, LeverBig, Phone, Ticket, Viewfinder, BombsMany, Keycard_Blue, Keycard_Gold, Valve, PaperStack, Shelf, Trash, FilingCabinet,
 
         Ammo = 150, AmmoGrenade, AmmoNega,
+
+        MedCabinet = 500, BombSingle,
     }
 
 

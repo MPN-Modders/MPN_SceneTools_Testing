@@ -18,7 +18,7 @@ MonoBehaviour:
   Fallback: {fileID: -1566201460090224680, guid: 1031c52adae0ffb47a07bfe02eacd583,
     type: 3}
   Doors:
-  - name: ' > Standard'
+  - name: ' > EMPTY'
     Mesh: {fileID: 2635522498378792772, guid: 1031c52adae0ffb47a07bfe02eacd583, type: 3}
     Type: -1
   - name: ' > Standard'
@@ -282,6 +282,12 @@ MonoBehaviour:
   - name: ' > AmmoNega'
     Mesh: {fileID: 2151040867874225193, guid: 8a29cdd974b2072459c94ddd23c7243b, type: 3}
     Type: 152
+  - name: ' > AmmoNega'
+    Mesh: {fileID: -1968180974679586998, guid: 8a29cdd974b2072459c94ddd23c7243b, type: 3}
+    Type: 500
+  - name: ' > AmmoNega'
+    Mesh: {fileID: 4371387145469975752, guid: 8a29cdd974b2072459c94ddd23c7243b, type: 3}
+    Type: 501
   Togglables:
   - name: ' > INVIS'
     Mesh: {fileID: -3065862382071041758, guid: 8a29cdd974b2072459c94ddd23c7243b, type: 3}
