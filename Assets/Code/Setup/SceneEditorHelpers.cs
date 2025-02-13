@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
-using UnityEngine;
-
 public class SceneEditorHelpers
 {
     // A collection of values that should not appear as Scripts, and a place to

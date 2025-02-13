@@ -1,17 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Cover_Point
-    - CustomAddon_Locker
-    - CustomAddon_Platform
-    - CustomAddon_ToggleAutomator
-    - CustomObj_Cover
-    - CustomObj_Interact
-    - CustomObj_Togglable
     - Dev_Cam
-    - Effect_FaceCamera
-    - Effect_RendererEnabler
-    - Effect_SoundEmitter
+    - Marker_Dummy
     - Marker_Player
     - Marker_Waypoint
     - ProxyObj_Cover
@@ -22,8 +13,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateMachineNode
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -48,11 +42,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
     - Class: 64
-      Script: {instanceID: 0}
-    - Class: 65
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -71,42 +61,22 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10138}
     - Class: 114
-      Script: {instanceID: 10258}
-    - Class: 114
-      Script: {instanceID: 10334}
-    - Class: 114
-      Script: {instanceID: 10402}
-    - Class: 114
-      Script: {instanceID: 10450}
-    - Class: 114
       Script: {instanceID: 10482}
-    - Class: 114
-      Script: {instanceID: 10498}
-    - Class: 114
-      Script: {instanceID: 10514}
     - Class: 114
       Script: {instanceID: 10546}
     - Class: 114
       Script: {instanceID: 10634}
-    - Class: 114
-      Script: {instanceID: 10642}
-    - Class: 114
-      Script: {instanceID: 10772}
-    - Class: 114
-      Script: {instanceID: 10974}
-    - Class: 114
-      Script: {instanceID: 11214}
     - Class: 114
       Script: {instanceID: 11300}
     - Class: 114
       Script: {instanceID: 11382}
     - Class: 114
       Script: {instanceID: 11432}
+    - Class: 114
+      Script: {instanceID: 13734}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
-      Script: {instanceID: 0}
-    - Class: 221
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -123,46 +93,10 @@ ScriptsOnlyBuild:
     className: ProxyObj_Playground
   - hash:
       serializedVersion: 2
-      Hash: 4504e481e7b4903b5a914714c62862f0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CustomObj_Cover
-  - hash:
-      serializedVersion: 2
-      Hash: b9c83905efa64dc2c6fc3bf5cf614e23
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CustomAddon_ToggleAutomator
-  - hash:
-      serializedVersion: 2
-      Hash: 186ce982f6702c7f39940e90eae54d9e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Effect_SoundEmitter
-  - hash:
-      serializedVersion: 2
-      Hash: 0cb8501907b6e572c0c9cb63be7508bd
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Effect_FaceCamera
-  - hash:
-      serializedVersion: 2
       Hash: faadcff1c8b710c90c500e22d83afbcf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RoomObj
-  - hash:
-      serializedVersion: 2
-      Hash: cff317715ca4faedb1f65bffd1f49516
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CustomObj_Togglable
-  - hash:
-      serializedVersion: 2
-      Hash: 7432a77fa8fac4bc9f999e1a5b711dfc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Cover_Point
   - hash:
       serializedVersion: 2
       Hash: 42b1fae8e7b66a8ee35e3c7388bd2314
@@ -175,30 +109,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ProxyObj_Locker
-  - hash:
-      serializedVersion: 2
-      Hash: fdca2138a1e10ec6c7624c0168bec2c6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CustomAddon_Platform
-  - hash:
-      serializedVersion: 2
-      Hash: 861fbd79d3a9e56cf1c63c39994d90f1
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CustomObj_Interact
-  - hash:
-      serializedVersion: 2
-      Hash: acb79df224013ad75e1cd5d953431343
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Effect_RendererEnabler
-  - hash:
-      serializedVersion: 2
-      Hash: d1dd2c6ccf44a1f1fb88b513855343b8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CustomAddon_Locker
   - hash:
       serializedVersion: 2
       Hash: b4a9e857975f890b5f0b2a44e58243f9
@@ -217,6 +127,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ProxyObj_Cover
+  - hash:
+      serializedVersion: 2
+      Hash: 3b400de9249b26a66d5caed69e058052
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Marker_Dummy
   platform: 19
   scenePathNames:
   - Assets/Scenes/SamplePlayground_PG.unity

@@ -74,6 +74,7 @@
     <Compile Include="Assets\Code\SceneObjs\CustomObj_Interact.cs" />
     <Compile Include="Assets\Code\SceneObjs\CustomObj_Togglable.cs" />
     <Compile Include="Assets\Code\SceneObjs\Marker_Character.cs" />
+    <Compile Include="Assets\Code\SceneObjs\Marker_Dummy.cs" />
     <Compile Include="Assets\Code\SceneObjs\Marker_Item.cs" />
     <Compile Include="Assets\Code\SceneObjs\Marker_Player.cs" />
     <Compile Include="Assets\Code\SceneObjs\Marker_Squad.cs" />
