@@ -1,8 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CustomAddon_Locker
+    - CustomAddon_Platform
+    - CustomAddon_ToggleAutomator
+    - CustomObj_Interact
+    - CustomObj_Togglable
     - Dev_Cam
-    - Marker_Dummy
+    - Marker_Character
     - Marker_Player
     - Marker_Waypoint
     - ProxyObj_Cover
@@ -13,15 +18,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateMachineNode
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
   sceneClasses:
     Assets/Scenes/SamplePlayground_PG.unity:
     - Class: 1
@@ -42,7 +43,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -59,24 +64,34 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9910}
     - Class: 114
+      Script: {instanceID: 10050}
+    - Class: 114
       Script: {instanceID: 10138}
     - Class: 114
       Script: {instanceID: 10482}
     - Class: 114
-      Script: {instanceID: 10546}
+      Script: {instanceID: 10498}
     - Class: 114
-      Script: {instanceID: 10634}
+      Script: {instanceID: 10548}
     - Class: 114
-      Script: {instanceID: 11300}
+      Script: {instanceID: 10636}
     - Class: 114
-      Script: {instanceID: 11382}
+      Script: {instanceID: 10644}
     - Class: 114
-      Script: {instanceID: 11432}
+      Script: {instanceID: 10774}
     - Class: 114
-      Script: {instanceID: 13734}
+      Script: {instanceID: 11216}
+    - Class: 114
+      Script: {instanceID: 11302}
+    - Class: 114
+      Script: {instanceID: 11384}
+    - Class: 114
+      Script: {instanceID: 11434}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 221
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -85,6 +100,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ProxyObj_Door
+  - hash:
+      serializedVersion: 2
+      Hash: 692d6ccff5f3e44089569b5b8b4ae469
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Marker_Character
   - hash:
       serializedVersion: 2
       Hash: e8e03a3cb8f40202973264e163caa952
@@ -99,6 +120,12 @@ ScriptsOnlyBuild:
     className: RoomObj
   - hash:
       serializedVersion: 2
+      Hash: cff317715ca4faedb1f65bffd1f49516
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CustomObj_Togglable
+  - hash:
+      serializedVersion: 2
       Hash: 42b1fae8e7b66a8ee35e3c7388bd2314
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -109,6 +136,24 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ProxyObj_Locker
+  - hash:
+      serializedVersion: 2
+      Hash: fdca2138a1e10ec6c7624c0168bec2c6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CustomAddon_Platform
+  - hash:
+      serializedVersion: 2
+      Hash: 861fbd79d3a9e56cf1c63c39994d90f1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CustomObj_Interact
+  - hash:
+      serializedVersion: 2
+      Hash: d1dd2c6ccf44a1f1fb88b513855343b8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CustomAddon_Locker
   - hash:
       serializedVersion: 2
       Hash: b4a9e857975f890b5f0b2a44e58243f9
@@ -127,12 +172,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ProxyObj_Cover
-  - hash:
-      serializedVersion: 2
-      Hash: 3b400de9249b26a66d5caed69e058052
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Marker_Dummy
   platform: 19
   scenePathNames:
   - Assets/Scenes/SamplePlayground_PG.unity
