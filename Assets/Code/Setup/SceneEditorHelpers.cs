@@ -81,3 +81,6 @@ public enum Currency { None = -100, Cash, Tokens }
 public enum MenuTypes { None = -100, Equipped = 0, Storage, Sell, Buy, Skills, Hairstyles, Workbench, Colorizer, SkinPicker, Swatches }
 public enum UpgradeValues { HirelingCap, Clonetanks, MinionLevel, HirelingLevelCap, NONE = 100 }
 
+public enum DamageSource { Ranged, Melee, Unarmed, Thrown, Explosion, Terrain, Hazard } 
+public enum DamageType { Ballistic, Slashing, Blunt, Explosive, Burn, Piercing, Biting, Shock, Stun, Negative, DeRes, Cold, Caustic, Force, Prime, None = 100 }
+

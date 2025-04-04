@@ -9,17 +9,17 @@ public class CustomObj_Interact : ProxyObj_Interact
 
 
     [Tooltip("For animating the Interactive. Create an AnimationOverrideController to extend from Interact_Base AnimationController.")]
-    public Animator LinkedAnimator; // An animation that happens when ready to use, such as Helicopter flying in.
+    public Animator LinkedAnimator; 
 
     // BASE (Including Destructible)
 
     [Space(10)]
-    [Tooltip("Recalculate the room's nodes. Suggested for Interactives alter the walkable area of a room.")]
+    [Tooltip("Recalculate the room's nodes. Suggested for Interactives that alter the walkable area of a room.")]
     public bool ResetPathNodes = false;
     [Tooltip("Progress Bar can never go off-screen.")]
-    public bool BarVisibleEverywhere = false;   // Does this bar show even off screen? Ex: Siege Mode sandbags
+    public bool BarVisibleEverywhere = false;  
     [Tooltip("Progress Bar is red.")]
-    public bool BarFillIsBad = false;           // This object will invert color of myBar.
+    public bool BarFillIsBad = false;           
 
 
     // EVENTOBJ
@@ -93,5 +93,5 @@ public class CustomObj_Interact : ProxyObj_Interact
     [Header("\tON COMPLETION")]
     [Space(10)]
     [Tooltip("Create duplicates of these objects every time the Interactive is used. These objects will have their GameObjects set to Active automatically.")]
-    public List<GameObject> CreateOnDone = new List<GameObject>(); // Objects to create on complete.
+    public List<GameObject> CreateOnDone = new List<GameObject>();
 }
