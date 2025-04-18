@@ -84,3 +84,9 @@ public enum UpgradeValues { HirelingCap, Clonetanks, MinionLevel, HirelingLevelC
 public enum DamageSource { Ranged, Melee, Unarmed, Thrown, Explosion, Terrain, Hazard } 
 public enum DamageType { Ballistic, Slashing, Blunt, Explosive, Burn, Piercing, Biting, Shock, Stun, Negative, DeRes, Cold, Caustic, Force, Prime, None = 100 }
 
+// HAZARDS:
+public enum Effects { IgnoreDeadguys, RagdollHit, KillHit, /*UNUSED,*/ IgnoreRagdollChar = 4, ClingTargetToMe, ExtremeBlood, NoGibs, FullDodgeOverride, GoreDeath };
+public enum DamageEffect { NoKill, Standard, IgnoreThreshold, NoKillPlayer }
+public enum HitFrequency { Always, OncePerFrame, OnceTilReset }
+public enum AttackQuality { Undodgable = -1, SweetSpot, Normal, Graze }
+public enum ExitTypes { Bots, NPCsAndBots, Any, NPCsNotBots, Player, PlayerSquadBots, PlayerSquad };
