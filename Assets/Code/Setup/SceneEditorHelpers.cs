@@ -49,9 +49,9 @@ public enum AffectCharacters { None, Everyone, NonEssentials, Essentials, Player
 public enum TraitList
 {
     Zed, NoPain, Hero, AutoDodgeThrown,   
-    NoCombo, BulletsAutoHit, NoWeapons, UNUSED_0, TrickyHead, UNUSED_1, SpawnDual, BowlingPin, Deadly_Contact, NoMelee, WalkPulse, UNUSED_2, NoGore, UNUSED_3, InfiniteAmmo, NoDisarm, VanishDeath, VanishDeactivate, Blind,             
-    ZeroGravityDeath, EffectOnDeactivate, GrappleKiller, NoCombatLock, Unphased, DizzyRagdoll, UNUSED_4, TurretSpin, UNUSED_5, Mushy, StartWounds, NoDizzy, H2HAngry, NoH2HSnap, NoExecute_Hilt, WeakHands, ItemsGoneOnDeath,  
-    StaggerOnLowHealth, DualWieldOverride, Lumbering, Sluggish, TwoHandOverride, Clumsy, Deaf, RemotePickup, ZedProof, MegaKnockback, AlwaysGoreDeath, Heavy, Uncounterable, UNUSED_6, NoCombatRagdoll, ThrowForward, DashAttacker,      
+    NoCombo, BulletsAutoHit, NoWeapons, /*UNUSED,*/ TrickyHead = 8, /*UNUSED,*/ SpawnDual = 10, BowlingPin, Deadly_Contact, NoMelee, WalkPulse, /*UNUSED,*/ NoGore = 16, /*UNUSED,*/ InfiniteAmmo = 18, NoDisarm, VanishDeath, VanishDeactivate, Blind,             
+    ZeroGravityDeath, EffectOnDeactivate, GrappleKiller, NoCombatLock, Unphased, DizzyRagdoll, /*UNUSED,*/ TurretSpin = 30, /*UNUSED,*/ Mushy = 32, StartWounds, NoDizzy, H2HAngry, NoH2HSnap, NoExecute_Hilt, WeakHands, ItemsGoneOnDeath,  
+    StaggerOnLowHealth, DualWieldOverride, Lumbering, Sluggish, TwoHandOverride, Clumsy, Deaf, RemotePickup, ZedProof, MegaKnockback, AlwaysGoreDeath, Heavy, Uncounterable, /*UNUSED,*/ NoCombatRagdoll = 54, ThrowForward, DashAttacker,      
     NoExecute_Local, Unconvertable, GrappleAttack, Robotic, IgnoreAutoEmbed, StableRanged, HeftyOverride, Incorporeal, Invisible, IncorporealFaction, BurnDeath, NoMagazines, NinjaSpawn, NoElementalDeath, NoDrop, NoSwap, 
     AlwaysBadThrow, Soulless, LeaveToPlayer, InvincibleStagger, NoFallDamage,     
 };
@@ -59,17 +59,46 @@ public enum TraitList
 // Behaviors are A.I. tendencies. Having none means default actions. Keep in mind: these behaviors are how this character uses the skills any character has, and thus only affect "choices".
 public enum BehaviorList
 {
-    Mindless, Hunter, Coward, Personal, Turtle, Evasive, Enraged, ItchyFinger, WhiteNinja, GrenadeLover, ChargeUpLover, UNUSED_0, FavorDual, Runner, Accurate, SlowWitted, Tactical, UNUSED_1, ChargeUpASAP, Defensive, ThrowsOften, Focused,              
-    ADD, FarSight, Indirect, Bubble, HotFoot, Camper, Sniper, NoSprint, Sharky, FreeAttacker, TargetShy, HoldCover, SprintOnlyInPursuit, Deadly, GetAwayFromMe, UNUSED_2, UNUSED_3, TattleTale, ChargeAttack_Angry, NeverStow, TurtleForever,       
-    RearSmash, NoWakeupAlertAllies, UNUSED_4, GrappleMasher, ForeverAutofire, ButtonMasher, Catlike, LeapSlam, LeapGrappler, ChargeAttack_Bullrush, ChargeAttack_Grapple, Teleport_DodgeFlank, Teleport_DodgePursue, NoPathing, CounterAttacks,   
+    Mindless, Hunter, Coward, Personal, Turtle, Evasive, Enraged, ItchyFinger, WhiteNinja, GrenadeLover, ChargeUpLover, /*UNUSED,*/ FavorDual = 12, Runner, Accurate, SlowWitted, Tactical, /*UNUSED,*/ ChargeUpASAP = 18, Defensive, ThrowsOften, Focused,              
+    ADD, FarSight, Indirect, Bubble, HotFoot, Camper, Sniper, NoSprint, Sharky, FreeAttacker, TargetShy, HoldCover, SprintOnlyInPursuit, Deadly, GetAwayFromMe, /*UNUSED,*/ /*UNUSED,*/ TattleTale = 39, ChargeAttack_Angry, NeverStow, TurtleForever,       
+    RearSmash, NoWakeupAlertAllies, /*UNUSED,*/ GrappleMasher = 46, ForeverAutofire, ButtonMasher, Catlike, LeapSlam, LeapGrappler, ChargeAttack_Bullrush, ChargeAttack_Grapple, Teleport_DodgeFlank, Teleport_DodgePursue, NoPathing, CounterAttacks,   
     LeapPursue, NoCombat, Teleport_Panic, NeverHeavyH2H, NoMeleeFlocking, NoAttack, JamAttack, UsePatrolPath, UseGuardPosts, XRay, MagicWandAllAutos, ChargeUpMax, IgnoreSiege, SpreadsJoy, 
 };
+
+public enum SkillsList
+{
+    ___________________CORE___________________,
+    Unarmed1 = 10, Unarmed2, Unarmed3,
+    Melee1 = 20, Melee2, Melee3,
+    Ranged1 = 30, Ranged2, Ranged3,
+    Acrobatic1 = 40, Acrobatic2, Acrobatic3,
+
+    ___________________UNARMED___________________,
+    LightPunch = 220, CritPunch, SpecialStrike, /*REMOVED,*/ ImprovWeapon = 224, FocusPunch, BetterSpecialStrike, StunningFist, CritPunchBonus, PowerFinish, ExposeCover, Revelator, MegaFinish,
+    Footwork = 240, /*REMOVED,*/ Ablation = 242, Counter, /*REMOVED,*/ /*REMOVED,*/  DashAttack = 246, DashHeavyAttack, PunchEnerv, MeleeCounter, /*REMOVED,*/
+    BasicGuard = 260, BetterGuard, GuardAiming, /*REMOVED,*/ /*REMOVED,*/  AdvancedGuard = 265, /*REMOVED,*/  Reciprocate = 267, GuardMobility, CounterCharging, MeleeGuard, AdvancedGuardMobility,
+
+    ___________________MELEE___________________,
+    LightSwing = 420, /*REMOVED,*/ CritSwing = 422, /*REMOVED,*/  BluntKnockback = 424, FocusSwing, FollowThrough, CritSwingBonus, /*REMOVED,*/  /*REMOVED,*/  BigWeapons = 430, BlockBreaker, /*REMOVED,*/
+    Positioning = 440, EdgedTiming, MinorLeague, /*REMOVED,*/ /*REMOVED,*/ DualMelee = 445, EdgedSpeed, /*REMOVED,*/  AdvancedDualMelee = 448, QuickUnsheath, ZipAttack, /*REMOVED,*/
+    BasicBlock = 460, BetterBlock, BlockAiming, BlockMobility, Riposte, Parry, AdvancedBlock, BlockBullets, DeflectBullets, ReflectBullets, /*REMOVED,*/  AdvancedBlockMobility = 471,
+
+    ___________________RANGED___________________,
+    StationaryRecovery = 620, Unphased, DirectionTracking, CoverBracing, AutoFireComp, Quickdraw, Highground, Unwavering, MobileAcc, HeavyArms, AutoFireCorrect, PerfectSights,
+    Headshot = 640, GreatShot, Unobstructed, DualRanged, PistolWhip, ZeroTolerance, DisarmingShot, MagicBullet, ShotgunBlastoff, AdvancedDualRanged, /*REMOVED,*/
+    OffHandAim = 660, SweetSpot, AimAssist, /*REMOVED,*/ /*REMOVED,*/ /*REMOVED,*/  CriticalShot = 666,/*REMOVED,*/  MobileAim = 668, /*REMOVED,*/ /*REMOVED,*/ PrecisionShooter = 671, PinDown, Deadeye,
+
+    ___________________ACROBAT___________________,
+    TacticalNovice = 820, MovingTarget, TacticalJourneyman, DodgeTackle, SnapDodge, ShootDodge, PickupKick, PickupLeaping, TacticalMaster, HeadLeap, SprintFire, /*REMOVED,*/
+    /*REMOVED,*/ PreciseThrow = 841, CatchThrown, ShurikenThrow, MadarangDisarm, DeadlyThrow, /*REMOVED,*/ /*REMOVED,*/  ShurikenArc = 848, LethalBluntThrow, Lawnmower, ThrowBig,
+    AthleticSprint = 860, /*REMOVED,*/ FastGetup = 862, /*REMOVED,*//*REMOVED,*/ Plummet = 865, TimedKipUp, FallTumble, TacSprint, /*REMOVED,*//*REMOVED,*/ FallRoll = 871,
+}
 
 public enum SelectionColors { Select, Highlight, Invalid, Important, NONE = 100 };
 
 public enum InteractiveEvents
 {
-    None, UNUSED1, UNUSED2, ColorPicker, Storage, Workbench, Ammo, Hire, Locker, Heal, KillUser, AmmoNexus, AmmoGrenades, SkillTrain, FacePicker, GibUser, Wandbench,
+    None, /*REMOVED,*//*REMOVED,*/ ColorPicker = 3, Storage, Workbench, Ammo, Hire, Locker, Heal, KillUser, AmmoNexus, AmmoGrenades, SkillTrain, FacePicker, GibUser, Wandbench,
     Arena_StartWaves = 30, Arena_LevelSelect, Arena_Imprint,
     Int_SpawnUnit = 50, Int_SpawnWeapon, Int_PlayCharacter, Int_Music, Int_ClearAll, Int_Stages, Int_Difficulty,
     Story_LevelSelect = 70,
@@ -90,3 +119,28 @@ public enum DamageEffect { NoKill, Standard, IgnoreThreshold, NoKillPlayer }
 public enum HitFrequency { Always, OncePerFrame, OnceTilReset }
 public enum AttackQuality { Undodgable = -1, SweetSpot, Normal, Graze }
 public enum ExitTypes { Bots, NPCsAndBots, Any, NPCsNotBots, Player, PlayerSquadBots, PlayerSquad };
+
+public enum BonusType
+{
+    NONE = 0,
+
+    ___WeaponStats___ = 100, RangedDamage, MeleeDamage, UnarmedDamage, PistolDamage, SlashingDamage, BluntDamage, H2HSpeed, MeleeSpeed, AllDamage, ExplosionDamage, UnarmedSpeed, RateOfFireNon_Automatics, RecoilRecovery, RangedAccuracy,
+                             ExtraMags = 120, ExtraMags_Handgun, ExtraMags_Standard, ExtraMags_Heavy, ExtraAmmo_Thrown,
+
+    ___ArmorStats___ = 200, ArmorDefense, EncumbranceMax,
+
+    ___CharacterStats___ = 300, ResistDizzy, TacDefense, TraumaRegen, MoveSpeed, /*REMOVED,*/
+
+    ___DamageSources___ = 400, DamageFromH2H, DamageFromFire, DamageFromShock, DamageFromNega, DamageFromStun, DamageFromElements, DamageFromPhysical, DamageFromCold, DamageFromAcid, DamageFromPrime, DamageFromAll,
+                               DamageFromSlash, DamageFromBlunt, DamageFromBullet, DamageFromBite, DamageFromPierce, DamageFromExplosive, DamageFromDeRes, DamageFromForce,
+
+    ___Mission_World___ = 500, CashBonus, /*REMOVED,*/ /*REMOVED,*/
+
+    ___Squad___ = 600, /*REMOVED,*/ MaxHirelingLevel = 602,
+
+    __Attributes__ = 700, Stat_Strength, Stat_Dexterity, Stat_Endurance, Stat_Tactics, Stat_Force, Stat_Lethality, Stat_Critical, Stat_Athletics, Stat_Strive, Stat_Senses,
+
+    __Headquarters__ = 800, HirelingRecoveryTime,
+
+}
+

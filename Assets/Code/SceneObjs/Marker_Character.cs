@@ -24,9 +24,18 @@ public class Marker_Character : Marker_DataAssigner
     public BehaviorList[] AddBehaviors = new BehaviorList[0];
     public TraitList[] RemoveTraits = new TraitList[0];
     public BehaviorList[] RemoveBehaviors = new BehaviorList[0];
+    public SkillsList[] RemoveSkills = new SkillsList[0];
+    public string[] AddModules = new string[0];
 
     [Space(10)]
-    public ProxyObj_REPOSITORY SpawnFromDoor;
+    [Tooltip("Essential characters take less damage in Executions, their fully damaged corpus won't auto-break from a fall, and they don't decay when bodies on screen exceed player settings. They're also a condition for checks done by Zone_Dead.")]
+    public bool AmEssential = false;
+    [Tooltip("This character cannot be moved for any reason.")]
+    public bool FixedInPlace = false;
+    public bool AmInvincible = false;
+
+    [Space(10)]
+    public ProxyObj_REPOSITORY SpawnFromDoor; 
 }
 
 public class Marker_DataAssigner : Marker

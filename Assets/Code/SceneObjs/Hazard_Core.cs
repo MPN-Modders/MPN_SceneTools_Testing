@@ -6,7 +6,7 @@ public class Hazard_Core : MonoBehaviour
     
     [Header("           to FREEZE POSITION: ALL!")]
     [Header("           It won't collide w/ Character!  INSTEAD, set it")]
-    [Header("IMPORTANT: Don't set rigidbody to Kinematic unless its Trigger!")]
+    [Header("IMPORTANT: Don't set rigidbody to Kinematic unless its a Trigger!")]
     public float contactDmg = 10;
     [Tooltip("NoKill: Character only hurt, never killed. Standard: Normal damage and death. IgnoreThreshold: Corpus doesn't need to be fully damaged before breaking it. NoKillPlayer: NoKill, but only for the player.")]
     public DamageEffect damageEffect = DamageEffect.IgnoreThreshold;
