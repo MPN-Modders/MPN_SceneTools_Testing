@@ -15,7 +15,7 @@ public class ProxyObj_Locker : ProxyObj
         Pegboard = 100,
     }
 
-    [Tooltip("The MadCards of the items in this locker.")]
+    [Tooltip("The MadCards of the items in this locker. NOTE: If you add a CustomAddon_Locker script to this object, these Contents will be overridden by that new Contents list.")]
     public List<string> Contents = new List<string>();
 
     // EVENTS

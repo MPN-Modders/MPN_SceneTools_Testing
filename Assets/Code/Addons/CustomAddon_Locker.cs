@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class CustomAddon_Locker : SceneObj
 {
+    [Header("    (Can also go on ProxyObj_Locker)")]
     [Header("   !! PLACE ON CUSTOM INTERACTIVE !!")]
     [Space(20)]
 
@@ -38,4 +39,6 @@ public class CustomAddon_Locker : SceneObj
     [Space(10)]
     [Tooltip("The MadCards of the items in this locker. Empty values are valid (for spacing among Stick Points). ")]
     public List<string> Contents = new List<string>();
+    [Tooltip("SerialNumbers assigned to the spawned items, in order.")]
+    public string[] AssignedSerialNumbers = new string[0]; // Give these serial numbers to weapons created.
 }
