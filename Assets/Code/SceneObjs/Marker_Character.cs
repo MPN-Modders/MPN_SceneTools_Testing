@@ -32,11 +32,14 @@ public class Marker_Character : Marker_DataAssigner
     public bool AmEssential = false;
     [Tooltip("This character cannot be moved for any reason.")]
     public bool FixedInPlace = false;
+    [Tooltip("If set to the appropriate Faction, this character will be added to the Player's squad.")]
+    public bool ToPlayerSquad;
+    [Tooltip("Do I get removed from my squad after death or not?")]
+    public bool PermanentSquadmate;
     public bool AmInvincible = false;
 
     [Space(10)]
-    public ProxyObj_REPOSITORY SpawnFromDoor; 
-}
+    public ProxyObj_REPOSITORY SpawnFromDoor; }
 
 public class Marker_DataAssigner : Marker
 {
