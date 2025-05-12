@@ -2401,26 +2401,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8719193562614825414, guid: 48d358e4ac09f7043b85e5078fb393ca,
         type: 3}
-      propertyPath: Contents.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8719193562614825414, guid: 48d358e4ac09f7043b85e5078fb393ca,
-        type: 3}
-      propertyPath: Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8719193562614825414, guid: 48d358e4ac09f7043b85e5078fb393ca,
-        type: 3}
-      propertyPath: Contents.Array.data[0]
-      value: R_Deagle
-      objectReference: {fileID: 0}
-    - target: {fileID: 8719193562614825414, guid: 48d358e4ac09f7043b85e5078fb393ca,
-        type: 3}
-      propertyPath: Contents.Array.data[3]
-      value: R_Deagle
-      objectReference: {fileID: 0}
-    - target: {fileID: 8719193562614825414, guid: 48d358e4ac09f7043b85e5078fb393ca,
-        type: 3}
       propertyPath: TaskEvent
       value: NewEvent1
       objectReference: {fileID: 0}

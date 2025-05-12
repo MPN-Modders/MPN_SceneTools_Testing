@@ -32,7 +32,7 @@ public class Marker_Character : Marker_DataAssigner
     public bool AmEssential = false;
     [Tooltip("This character cannot be moved for any reason.")]
     public bool FixedInPlace = false;
-    [Tooltip("If set to the appropriate Faction, this character will be added to the Player's squad.")]
+    [Tooltip("If set to the appropriate Faction, this character will be added to the Player's squad (NOTE: This 'unsupported' feature will only find the Player's squad if they are the only Player faction squad in the room)")]
     public bool ToPlayerSquad;
     [Tooltip("Do I get removed from my squad after death or not?")]
     public bool PermanentSquadmate;

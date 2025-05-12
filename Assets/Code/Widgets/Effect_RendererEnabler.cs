@@ -2,7 +2,9 @@
 
 public class Effect_RendererEnabler : MonoBehaviour
 {
+    [Tooltip("If FALSE, disables renderer when this Room is not the focus. Set TRUE to ignore Room.")]
     public bool DoNotRegisterToRoom = false;
+    [Tooltip("Disable whden the camera's not viewing the attached renderer.")]
     public bool MustBeCameraVisible = false;
     [Tooltip("Characters as well as anything in the Debris and Obstacle layers will also block this object from the camera.")]
     public bool BlockedBySmall = false;

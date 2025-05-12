@@ -25,9 +25,9 @@ public class CustomAddon_Locker : SceneObj
     public bool WeaponsAreQuest = false;
 
     [Space(10)]
-    [Tooltip("Locations for items to be placed, in order.")]
+    [Tooltip("Locations for items to be placed, in order. NOTE: Proxy Lockers ignore this.")]
     public Transform[] ItemStickPoints;
-    [Tooltip("Where excess items spawn from if there aren't enough Stick Points.")]
+    [Tooltip("Where excess items spawn from if there aren't enough Stick Points. NOTE: Proxy Lockers ignore this.")]
     public Transform DropPoint;
     [Tooltip("Force applied to items spawned from DropPoint.")]
     public float ExpelForce = 12f;

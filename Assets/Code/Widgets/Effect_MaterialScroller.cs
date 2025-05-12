@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class Effect_MaterialScroller : MonoBehaviour
 {
-    [Tooltip("The number of frames (per axis) until that axis has looped back to the beginning.")]
+    [Tooltip("The number of seconds (per axis) until that axis has looped back to the beginning.")]
     public Vector2 Shift = new Vector2(1, 1);
     public bool RandomStartOffset = false;
 

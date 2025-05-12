@@ -47,7 +47,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SerialNumber: 
   Type: 0
+  ExtraMags: 0
   Contents: []
+  LockerEvent: 
 --- !u!33 &3126470425326608228
 MeshFilter:
   m_ObjectHideFlags: 0

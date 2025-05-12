@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class CustomAddon_Vendor : SceneObj 
 {
+    [Header("    (Can also go on ProxyObj_Locker)")]
     [Header("   !! PLACE ON CUSTOM INTERACTIVE !!")]
     [Space(20)]
 
