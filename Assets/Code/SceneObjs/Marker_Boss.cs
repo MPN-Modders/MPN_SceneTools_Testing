@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class Marker_Boss : Marker_Character
 {
-	[Space(15)]
-	[Header("_____________________________________________")]
 
 	[Space(15)]
 	[Header("\tBOSS PATTERNS")]
+	[Space(15)]
+	[Header("_____________________________________________")]
 	public List<BossPatternData_STP> AllPatterns = new List<BossPatternData_STP>();
 
 	[Space(10)]
@@ -41,6 +41,7 @@ public class BossPatternData_STP
 	public List<TraitList> TraitRemove = new List<TraitList>();
 
 	[Header("\tNODES")]
+	[Tooltip("Currently only used by Gil's AI module. More versatile modules will be added for modders at a future date that use these waypoints.")]
 	public Marker_Waypoint[] PhaseWaypoints = new Marker_Waypoint[0];
 
 	[Header("\tBONUSES")]

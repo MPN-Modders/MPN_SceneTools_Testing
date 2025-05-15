@@ -82,6 +82,7 @@ public class PatrolParameters_STP
 public class PatrolPath_STP
 {
 	[HideInInspector] public string name = "Patrol Path";
+    [Tooltip("Leave blank/empty elements in this list to set the previous waypoint as a \"wait here!\" order.")]
     public Marker_Waypoint[] PathPoints = new Marker_Waypoint[0];
     [Tooltip("If TRUE, the exact path used to get from the first to the last Point will be duplicated and reversed, allowing the Squad to return the way they came.")]
     public bool GenerateReturnPath = true;
