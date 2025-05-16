@@ -11,13 +11,13 @@ public class Marker_Cutscene : Marker
 	[Header("      ------------- ")]
 	[Space(10)]
 	[Tooltip("The cameras available (via their index) to the Steps on your CutsceneCard. NOTE: These cameras can exist elsewhere in the scene (so multiple Cutscenes can access them), but if they're parented to this Marker, they MUST be a direct child of it, or be annihilated.")]
-	public Camera[] ViewCams = new Camera[0];       // These will cross over into MPN with the scene.
+	public Camera[] ViewCams = new Camera[0];      
 	[Tooltip("The Marks that indicate where Cutscene actors will walk or teleport to, as commanded. Like with ViewCams, these are accessed by index via your attached CutsceneCard, and can either exist in the scene itself or as a direct child of this Marker.")]
-	public GameObject[] Marks = new GameObject[0];  // These will be converted to Spawn Points (so they dont get registered for pathing). Maybe just AddComponent?
+	public GameObject[] Marks = new GameObject[0]; 
 
 	[Space(10)]
 	[Tooltip("On complete, mark this WorldChange as TRUE for the career. If used, this Cutscene will only run once EVER for this save (unless the WorldChange is set back to FALSE).")]
-	public string WorldChange = "";             // .
+	public string WorldChange = "";           
 	[Tooltip("Higher priority cutscenes will interrupt lower priority ones, and will prevent lower priority cutscenes from starting.")]
 	public int CutscenePriority = 0;
 
@@ -61,4 +61,9 @@ public class Marker_Cutscene : Marker
 	public bool AllowOutsideActors = false;
 	[Tooltip("When a Step in this cutscene fires off the \"ForceActorList\" action, all Actors will be wiped and replaced with new ones (as needed).")]
 	public List<string> ForceNewPlayerSquad = new List<string>();
+
+	private void Update()
+	{
+		// Only here so we can disable the Cutscene's script!
+	}
 }

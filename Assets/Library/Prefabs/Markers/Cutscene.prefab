@@ -76,12 +76,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SerialNumber: 
-  AttachCutsceneCard: Cutscene_T1
+  AttachCutsceneCard: 
   ViewCams:
   - {fileID: 4094012363917913772}
   Marks:
   - {fileID: 4094012363129520130}
-  WorldChange: TestWorldChange
+  WorldChange: 
   CutscenePriority: 0
   Unskippable: 1
   DialogAsNarration: 1
@@ -94,7 +94,7 @@ MonoBehaviour:
   StartDelay: 1.5
   CameraWeight: 1
   CameraChangeFrames: {x: 30, y: 30}
-  StartCondition: 1
+  StartCondition: 0
   StartZone: {fileID: 0}
   ClearMoveOrdersOnComplete: 1
   ActorSerials:

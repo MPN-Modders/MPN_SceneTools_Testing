@@ -120,7 +120,7 @@ public enum HitFrequency { Always, OncePerFrame, OnceTilReset }
 public enum AttackQuality { Undodgable = -1, SweetSpot, Normal, Graze }
 public enum ExitTypes { Bots, NPCsAndBots, Any, NPCsNotBots, Player, PlayerSquadBots, PlayerSquad };
 
-public enum StartConditions { Room, Zone, EventOnly, Anywhere };
+public enum StartConditions { Room, Zone, /*EventOnly,*/ Anywhere = 3 };
 public enum DisableControlsList { None, Actors, ActorsAndPlayer }; // None means anyone can move. Actors means only participants freeze. ActorsAndPlayer is the Player and his squad.
 
 public enum BonusType
