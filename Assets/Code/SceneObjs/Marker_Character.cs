@@ -18,6 +18,8 @@ public class Marker_Character : Marker_DataAssigner
     public string Held_R, Held_L, Stow_R, Stow_L, Thrown;
     [Tooltip("The MadCards of the armor to equip.")]
     public string[] Worn = new string[0];
+    [Tooltip("The MadCard of a Keycard (C4, Blue Key, etc.) to carry.")]
+    public string Keycard;
 
     [Header("  == TRAITS / BEHAVIORS == ")][Space(10)]
     public TraitList[] AddTraits = new TraitList[0];

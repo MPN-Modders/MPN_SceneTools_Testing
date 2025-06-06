@@ -15,7 +15,7 @@ public class CustomAddon_Locker : SceneObj
     [Space(10)]
     [Tooltip("In Story Mode, these weapons come with extra ammo.")]
     public bool ExtraMags = true;
-    [Tooltip("If you took all my stuff, close and lock me.")]
+    [Tooltip("If you took all my stuff, close me.")]
     public bool CloseOnEmpty = false;
     [Tooltip("If this locker closes (or loses its inventory if it CANT close), should we respawn our weapons from Memory?")]
     public bool RespawnOnClose = false;
