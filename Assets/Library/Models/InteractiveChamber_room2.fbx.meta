@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: temp_4th
-    second: {fileID: 2100000, guid: 14c320466ffb21f42a796b881d63652f, type: 2}
+    second: {fileID: 2100000, guid: b08f171fb8222c044961cc6afa2503eb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: temp_bib
-    second: {fileID: 2100000, guid: e95c7a3b3c47d4e4d91cad695b774d0d, type: 2}
+    second: {fileID: 2100000, guid: 150475c43cb55984597ef8c7e14e47c2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

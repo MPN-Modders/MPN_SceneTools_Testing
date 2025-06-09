@@ -30,6 +30,15 @@ public class ProxyObj_Door : ProxyObj_REPOSITORY
         Transition = 500, Instant_x3, DropIn, DropIn_x5, Launched_x3, Ledge, Ledge_x3, Rail,
     }
 
+    [Header("  == USE BOOLS == ")]
+    [Space(10)]
+    [Tooltip("Disable the room that sends you to this door.")]
+    public bool NoReturn;
+    [Tooltip("This door is usable even if the room is locked down.")]
+    public bool IgnoreLockdown;
+    public bool UserInvincible;
+    public bool UserUntargetable;
+    public bool UserIntangible;
 
     [Header("  == CONNECTIONS == ")]
     [Space(10)]
