@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SerialNumber: 
-  AttachCutsceneCard: 
+  AttachCutsceneCard: mc_MyCutscene
   ViewCams:
   - {fileID: 4094012363917913772}
   Marks:
@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 4094012363917913770}
   - component: {fileID: 4094012363917913772}
   - component: {fileID: 4094012363917913773}
+  - component: {fileID: 1618393905869294067}
   m_Layer: 0
   m_Name: Camera (o)
   m_TagString: Untagged
@@ -184,3 +185,22 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4094012363917913771}
   m_Enabled: 1
+--- !u!95 &1618393905869294067
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4094012363917913771}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8371561e4838e904ba5407e8abd42e7d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

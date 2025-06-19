@@ -59,7 +59,7 @@ public class Marker_Cutscene : Marker
 	public List<string> ActorSerials = new List<string>();
 	[Tooltip("Can we look up and use actors not included in our main list when they appear on a CutsceneStep?")]
 	public bool AllowOutsideActors = false;
-	[Tooltip("When a Step in this cutscene fires off the \"ForceActorList\" action, all Actors will be wiped and replaced with new ones (as needed).")]
+	[Tooltip("When a Step in this cutscene fires off the \"ForceActorList\" action, all Actors will be wiped and replaced with new ones (as needed). All entries must be the Filename of a Character MadCard.")]
 	public List<string> ForceNewPlayerSquad = new List<string>();
 
 	private void Update()
