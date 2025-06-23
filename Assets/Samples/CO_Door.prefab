@@ -125,7 +125,7 @@ MonoBehaviour:
   AccessLights:
   - {fileID: 2533147095310776965}
   DisableLightIfNoLink: 0
-  SpawnPoints:
+  StartPoints:
   - {fileID: 8214016452884645866}
   ExitPoints:
   - {fileID: 8214016452647925074}
@@ -327,7 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8214016452884645866}
   m_Layer: 0
-  m_Name: Spawn1
+  m_Name: Start1
   m_TagString: Untagged
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

@@ -79,7 +79,8 @@ public class CustomObj_Door : ProxyObj_Door
     [Header("       POINTS")]
     [Space(10)]
     [Tooltip("Where exiting characters will start from. The number of SpawnPoints dictates how many characters can leave from a Door at a time.")]
-    public Transform[] SpawnPoints = new Transform[0];
+    [UnityEngine.Serialization.FormerlySerializedAs("SpawnPoints")]
+    public Transform[] StartPoints = new Transform[0];
     [Tooltip("Where exiting characters will head. If the number of Spawn and Exit points match, each character will head to the ExitPoint that matches the index of their SpawnPoint.")]
     public Transform[] ExitPoints = new Transform[0];
 
