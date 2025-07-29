@@ -41,4 +41,6 @@ public class CustomAddon_Locker : SceneObj
     public List<string> Contents = new List<string>();
     [Tooltip("SerialNumbers assigned to the spawned items, in order.")]
     public string[] AssignedSerialNumbers = new string[0]; // Give these serial numbers to weapons created.
+    public void Event_LockerIsClosed()
+    { } // For SceneTools Animator access: Clears contents of Locker, and respawns weapons if appropriate. NOTE: Event may sometimes be skipped if it happens at the VERY end of the animation, so avoid that!
 }
