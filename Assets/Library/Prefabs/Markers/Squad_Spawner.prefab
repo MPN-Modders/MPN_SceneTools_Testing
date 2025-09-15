@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SerialNumber: 
+  SpawnEnabled: 1
   Faction: 100
   Alertness: 2
   Chatter:
@@ -54,6 +55,10 @@ MonoBehaviour:
     SecondsDelay: 2
     Narrative: 1
     PlayInCombat: 1
+  PatrolParams:
+    NeverWander: 0
+    FollowLeader: 1
+    PatrolPaths: []
   SecondsInRoomTilSpawn: 2
   SpawnFromDoors: []
   SpawnRequirement: 0
@@ -87,7 +92,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8450534576257073604}
-  m_Mesh: {fileID: 2419512741572611052, guid: 8bd187af48740d74bb3daa726ea56daf, type: 3}
+  m_Mesh: {fileID: 2419512741572611052, guid: 1031c52adae0ffb47a07bfe02eacd583, type: 3}
 --- !u!23 &8450534576257073605
 MeshRenderer:
   m_ObjectHideFlags: 0

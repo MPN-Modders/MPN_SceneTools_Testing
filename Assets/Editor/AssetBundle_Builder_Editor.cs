@@ -7,8 +7,18 @@ public class AssetBundle_Builder_Editor
 {
     static readonly string FileExt = ".sobj";
 
-    [MenuItem("Madness/AssetBundle/ >> Build")]
-    static void BuildAllAssetBundles()
+    [MenuItem("Madness/AssetBundle/ >> Build (Uncompressed)")]
+    static void Build_Uncompressed()
+    {
+        BuildAllAssetBundles(BuildAssetBundleOptions.UncompressedAssetBundle);
+    }
+    [MenuItem("Madness/AssetBundle/ >> Build (Compressed) *RECOMMENDED*")]
+    static void Build_Compressed()
+    {
+        BuildAllAssetBundles(BuildAssetBundleOptions.ChunkBasedCompression);
+    }
+
+    static void BuildAllAssetBundles(BuildAssetBundleOptions inBuildOption)
     {
         try
         {
@@ -18,7 +28,7 @@ public class AssetBundle_Builder_Editor
 
             AssetBundleManifest abm = 
             BuildPipeline.BuildAssetBundles(thisDir.FullName,
-                                            BuildAssetBundleOptions.None,
+                                            inBuildOption, // .None
                                             BuildTarget.StandaloneWindows64);
 
             bool openFolder = true;
