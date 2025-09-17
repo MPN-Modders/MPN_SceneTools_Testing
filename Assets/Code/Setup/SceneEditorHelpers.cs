@@ -53,13 +53,13 @@ public enum TraitList
     ZeroGravityDeath, EffectOnDeactivate, GrappleKiller, NoCombatLock, Unphased, DizzyRagdoll, /*UNUSED,*/ TurretSpin = 30, /*UNUSED,*/ Mushy = 32, StartWounds, NoDizzy, H2HAngry, NoH2HSnap, NoExecute_Hilt, WeakHands, ItemsGoneOnDeath,  
     StaggerOnLowHealth, DualWieldOverride, Lumbering, Sluggish, TwoHandOverride, Clumsy, Deaf, RemotePickup, ZedProof, MegaKnockback, AlwaysGoreDeath, Heavy, Uncounterable, /*UNUSED,*/ NoCombatRagdoll = 54, ThrowForward, DashAttacker,      
     NoExecute_Local, Unconvertable, GrappleAttack, Robotic, IgnoreAutoEmbed, StableRanged, HeftyOverride, Incorporeal, Invisible, IncorporealFaction, BurnDeath, NoMagazines, NinjaSpawn, NoElementalDeath, NoDrop, NoSwap, 
-    AlwaysBadThrow, Soulless, LeaveToPlayer, InvincibleStagger, NoFallDamage,     
+    AlwaysBadThrow, Soulless, LeaveToPlayer, InvincibleStagger, NoFallDamage, NoIncap, NoDeadZoneDamage,
 };
 
 // Behaviors are A.I. tendencies. Having none means default actions. Keep in mind: these behaviors are how this character uses the skills any character has, and thus only affect "choices".
 public enum BehaviorList
 {
-    Mindless, Hunter, Coward, Personal, Turtle, Evasive, Enraged, ItchyFinger, WhiteNinja, GrenadeLover, ChargeUpLover, /*UNUSED,*/ FavorDual = 12, Runner, Accurate, SlowWitted, Tactical, /*UNUSED,*/ ChargeUpASAP = 18, Defensive, ThrowsOften, Focused,              
+    Mindless, Hunter, Coward, Personal, Turtle, Evasive, Enraged, ItchyFinger, WhiteNinja, GrenadeLover, ChargeUpLover, BadBlock, FavorDual, Runner, Accurate, SlowWitted, Tactical, /*UNUSED,*/ ChargeUpASAP = 18, Defensive, ThrowsOften, Focused,              
     ADD, FarSight, Indirect, Bubble, HotFoot, Camper, Sniper, NoSprint, Sharky, FreeAttacker, TargetShy, HoldCover, SprintOnlyInPursuit, Deadly, GetAwayFromMe, /*UNUSED,*/ /*UNUSED,*/ TattleTale = 39, ChargeAttack_Angry, NeverStow, TurtleForever,       
     RearSmash, NoWakeupAlertAllies, /*UNUSED,*/ GrappleMasher = 46, ForeverAutofire, ButtonMasher, Catlike, LeapSlam, LeapGrappler, ChargeAttack_Bullrush, ChargeAttack_Grapple, Teleport_DodgeFlank, Teleport_DodgePursue, NoPathing, CounterAttacks,   
     LeapPursue, NoCombat, Teleport_Panic, NeverHeavyH2H, NoMeleeFlocking, NoAttack, JamAttack, UsePatrolPath, UseGuardPosts, XRay, MagicWandAllAutos, ChargeUpMax, IgnoreSiege, SpreadsJoy, 
