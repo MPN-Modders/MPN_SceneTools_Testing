@@ -3,6 +3,10 @@ using System.Collections.Generic;
 
 public class Hazard_Splosive : MonoBehaviour
 {
+    [Tooltip("The MadCard of the Explosion that occurs.")]
+    public string Explosion = "PropaneTank";
+
+    [Space(10)]
     public bool ResetPathNodesAfterDestroy = false;
     public float Health = 10;
     [Tooltip("This object will react to hits but cannot die.")]
@@ -24,10 +28,9 @@ public class Hazard_Splosive : MonoBehaviour
     public string DestroySFX;
 
     [Tooltip("Object created where object has been hit. We recommend a particle system.")]
+    [Space(10)]
     public GameObject HitRicochet;
 
-    [Tooltip("The MadCard of the Explosion that occurs.")]
-    public string Explosion;
     [Space(10)]
     [Tooltip("A Prefab from your SceneTools library that will be created when it explodes. We recommend a particle system.")]
     public GameObject SplodeEffect;
