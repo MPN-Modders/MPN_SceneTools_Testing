@@ -49,11 +49,11 @@ public enum AffectCharacters { None, Everyone, NonEssentials, Essentials, Player
 public enum TraitList
 {
     Zed, NoPain, Hero, AutoDodgeThrown,   
-    NoCombo, BulletsAutoHit, NoWeapons, /*UNUSED,*/ TrickyHead = 8, NoRanged, SpawnDual, BowlingPin, Deadly_Contact, NoMelee, WalkPulse, /*UNUSED,*/ NoGore = 16, /*UNUSED,*/ InfiniteAmmo = 18, NoDisarm, VanishDeath, VanishDeactivate, Blind,             
+    NoCombo, BulletsAutoHit, NoWeapons, /*UNUSED,*/ TrickyHead = 8, /*LOCKED_DO_NOT_USE,*/ SpawnDual = 10, BowlingPin, Deadly_Contact, NoMelee, WalkPulse, /*UNUSED,*/ NoGore = 16, /*UNUSED,*/ InfiniteAmmo = 18, NoDisarm, VanishDeath, VanishDeactivate, Blind,             
     ZeroGravityDeath, EffectOnDeactivate, GrappleKiller, NoCombatLock, Unphased, DizzyRagdoll, /*UNUSED,*/ TurretSpin = 30, /*UNUSED,*/ Mushy = 32, StartWounds, NoDizzy, H2HAngry, NoH2HSnap, NoExecute_Hilt, WeakHands, ItemsGoneOnDeath,  
     StaggerOnLowHealth, DualWieldOverride, Lumbering, Sluggish, TwoHandOverride, Clumsy, Deaf, RemotePickup, ZedProof, MegaKnockback, AlwaysGoreDeath, Heavy, Uncounterable, /*UNUSED,*/ NoCombatRagdoll = 54, ThrowForward, DashAttacker,      
     NoExecute_Local, Unconvertable, GrappleAttack, Robotic, IgnoreAutoEmbed, StableRanged, HeftyOverride, Incorporeal, Invisible, IncorporealFaction, BurnDeath, NoMagazines, NinjaSpawn, NoElementalDeath, NoDrop, NoSwap, 
-    AlwaysBadThrow, Soulless, LeaveToPlayer, InvincibleStagger, NoFallDamage, NoIncap, NoDeadZoneDamage,
+    AlwaysBadThrow, Soulless, LeaveToPlayer, InvincibleStagger, NoFallDamage, NoIncap, NoDeadZoneDamage, NoRanged,
 };
 
 // Behaviors are A.I. tendencies. Having none means default actions. Keep in mind: these behaviors are how this character uses the skills any character has, and thus only affect "choices".
