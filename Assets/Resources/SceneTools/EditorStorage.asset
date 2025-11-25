@@ -282,10 +282,10 @@ MonoBehaviour:
   - name: ' > AmmoNega'
     Mesh: {fileID: 2151040867874225193, guid: 8a29cdd974b2072459c94ddd23c7243b, type: 3}
     Type: 152
-  - name: ' > AmmoNega'
+  - name: ' > MedCabinet'
     Mesh: {fileID: -1968180974679586998, guid: 8a29cdd974b2072459c94ddd23c7243b, type: 3}
     Type: 500
-  - name: ' > AmmoNega'
+  - name: ' > BombSingle'
     Mesh: {fileID: 4371387145469975752, guid: 8a29cdd974b2072459c94ddd23c7243b, type: 3}
     Type: 501
   Togglables:
@@ -310,3 +310,34 @@ MonoBehaviour:
   - name: ' > Fanblade'
     Mesh: {fileID: -6749379102352178009, guid: 8a29cdd974b2072459c94ddd23c7243b, type: 3}
     Type: 100
+  Seats:
+  - name: 
+    Mesh: {fileID: -6873076626299092532, guid: aca8d5ac29cdee142953688f106d510e, type: 3}
+    Type: 0
+  - name: 
+    Mesh: {fileID: 5386404881474918535, guid: aca8d5ac29cdee142953688f106d510e, type: 3}
+    Type: 1
+  - name: 
+    Mesh: {fileID: 5273467516204431040, guid: aca8d5ac29cdee142953688f106d510e, type: 3}
+    Type: 2
+  - name: 
+    Mesh: {fileID: -9188409956887670683, guid: aca8d5ac29cdee142953688f106d510e, type: 3}
+    Type: 3
+  - name: 
+    Mesh: {fileID: 5293566280619298196, guid: aca8d5ac29cdee142953688f106d510e, type: 3}
+    Type: 4
+  - name: 
+    Mesh: {fileID: 861365744514687969, guid: aca8d5ac29cdee142953688f106d510e, type: 3}
+    Type: 5
+  - name: 
+    Mesh: {fileID: 6899388048302054003, guid: aca8d5ac29cdee142953688f106d510e, type: 3}
+    Type: 6
+  - name: 
+    Mesh: {fileID: -6358770030224772786, guid: aca8d5ac29cdee142953688f106d510e, type: 3}
+    Type: 7
+  - name: 
+    Mesh: {fileID: 3826553513012099300, guid: aca8d5ac29cdee142953688f106d510e, type: 3}
+    Type: 8
+  - name: 
+    Mesh: {fileID: 3826553513012099300, guid: aca8d5ac29cdee142953688f106d510e, type: 3}
+    Type: 9

@@ -29,7 +29,7 @@ public class CustomObj_Door : ProxyObj_Door
     // [ALREADY MOVED] ProxyObj_REPOSITORY has Vocation Requirement/Prohbited and AmLocked
 
     [Header("       SFX")]    [Space(10)]
-    public string SoundEnter; // NOTE: These are used by Repository/Vehicle and thus must be remade in those CustomObj scripts too. This is because of how inherritance works with CustomObj and Proxies.
+    public string SoundEnter; // NOTE: These are used by Repository/Seat and thus must be remade in those CustomObj scripts too. This is because of how inherritance works with CustomObj and Proxies.
     public string SoundLeave; // NOTE: "
     public string SoundLock;  // NOTE: "
     //

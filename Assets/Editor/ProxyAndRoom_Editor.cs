@@ -125,6 +125,17 @@ public class ProxyObj_Togglable_Editor : Proxy_Editor
 	}
 
 }
+[CanEditMultipleObjects]
+[CustomEditor(typeof(ProxyObj_Seat))]
+public class ProxyObj_Seat_Editor : Proxy_Editor
+{
+	protected override List<EditorStorage.MeshDisplay> GetList() { return editorStorage.Seats.ConvertAll(o => (EditorStorage.MeshDisplay)o); }
+	protected override bool IsTypeMatch(EditorStorage.MeshDisplay meshList, string inTypeName)
+	{
+		return ((EditorStorage.MeshDisplay_Seats)meshList).Type.ToString() == inTypeName;
+	}
+
+}
 
 
 

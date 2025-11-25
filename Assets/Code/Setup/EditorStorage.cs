@@ -13,6 +13,7 @@ public class EditorStorage : ScriptableObject
     [Space(20)] public List<MeshDisplay_Lockers> Lockers = new List<MeshDisplay_Lockers>();
     [Space(20)] public List<MeshDisplay_Interactives> Interactives = new List<MeshDisplay_Interactives>();
     [Space(20)] public List<MeshDisplay_Togglables> Togglables = new List<MeshDisplay_Togglables>();
+    [Space(20)] public List<MeshDisplay_Seats> Seats = new List<MeshDisplay_Seats>();
 
     private void OnEnable()
     {
@@ -26,6 +27,8 @@ public class EditorStorage : ScriptableObject
             md.name = " > " + md.Type.ToString();
         foreach (MeshDisplay_Togglables md in Togglables)
             md.name = " > " + md.Type.ToString();
+        foreach (MeshDisplay_Seats md in Seats)
+            md.name = " > " + md.Type.ToString();
     }
 
 
@@ -35,7 +38,6 @@ public class EditorStorage : ScriptableObject
         [HideInInspector] public string name;
         public Mesh Mesh;
     }
-
     [System.Serializable]
     public class MeshDisplay_Doors : MeshDisplay
     {
@@ -60,6 +62,11 @@ public class EditorStorage : ScriptableObject
     public class MeshDisplay_Togglables : MeshDisplay
     {
         public ProxyObj_Togglable.ProxyType Type;
+    }
+    [System.Serializable]
+    public class MeshDisplay_Seats : MeshDisplay
+    {
+        public ProxyObj_Seat.ProxyType Type;
     }
 
 }
