@@ -3,9 +3,8 @@ using System.Collections.Generic;
 
 public class CustomAddon_Locker : SceneObj
 {
-    [Header("    (Can also go on ProxyObj_Locker)")]
-    [Header("   !! PLACE ON CUSTOM INTERACTIVE !!")]
-    [Space(20)]
+    [Header("   or on Custom Interactives/Destructibles")]
+    [Header("   !! Place on ProxyObj_Locker,")]
 
     [Tooltip("Start the attached Interactive as Used.")]
     public bool StartOpen = false;

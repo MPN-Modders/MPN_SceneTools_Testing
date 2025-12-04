@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 627546138217612451}
   - component: {fileID: 4255364372702329911}
   - component: {fileID: 627546138217612452}
+  - component: {fileID: 1988159786869259171}
   m_Layer: 0
   m_Name: Dev_Cam
   m_TagString: MainCamera
@@ -88,3 +89,23 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1988159786869259171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627546138217612454}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355ec96c05340d945ad80ddf8034ec8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceFog: 1
+  excludeFarPixels: 1
+  useRadialDistance: 0
+  heightFog: 1
+  height: 1
+  heightDensity: 2
+  startDistance: 0
+  fogShader: {fileID: 4800000, guid: ffea46dcc060ed545bc312595bd3d19f, type: 3}

@@ -2094,6 +2094,11 @@ PrefabInstance:
       propertyPath: LinkedRoomDisplay
       value: Room_NewPlayground
       objectReference: {fileID: 0}
+    - target: {fileID: 1988159786869259171, guid: 8d54a1d8bd329b646808bf4fcf1816d1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d54a1d8bd329b646808bf4fcf1816d1, type: 3}
 --- !u!1001 &2109542479

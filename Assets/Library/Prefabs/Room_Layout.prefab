@@ -223,6 +223,7 @@ MonoBehaviour:
   DisableLockout_PrevRoom: 0
   ForceLockout_PrevRoom: 0
   SoftDeactivate: 0
+  ArenaSafeRoom: 0
   LeaveLockRules: 0
   CameraPoint: {fileID: 6755597039879958189}
   CameraTarget: {fileID: 6755597039878712465}
@@ -286,6 +287,7 @@ GameObject:
   - component: {fileID: 6755597039877582991}
   - component: {fileID: 6755597039876452943}
   - component: {fileID: 6755597039879958189}
+  - component: {fileID: 6637315485923799974}
   m_Layer: 16
   m_Name: Camera_Point
   m_TagString: Untagged
@@ -396,6 +398,26 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &6637315485923799974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755597039878712457}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355ec96c05340d945ad80ddf8034ec8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceFog: 1
+  excludeFarPixels: 1
+  useRadialDistance: 0
+  heightFog: 1
+  height: 1
+  heightDensity: 2
+  startDistance: 0
+  fogShader: {fileID: 4800000, guid: ffea46dcc060ed545bc312595bd3d19f, type: 3}
 --- !u!1 &6755597039878712459
 GameObject:
   m_ObjectHideFlags: 0

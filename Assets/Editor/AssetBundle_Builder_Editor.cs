@@ -7,15 +7,15 @@ public class AssetBundle_Builder_Editor
 {
     static readonly string FileExt = ".sobj";
 
-    [MenuItem("Madness/AssetBundle/ >> Build (Uncompressed)")]
-    static void Build_Uncompressed()
-    {
-        BuildAllAssetBundles(BuildAssetBundleOptions.UncompressedAssetBundle);
-    }
     [MenuItem("Madness/AssetBundle/ >> Build (Compressed) *RECOMMENDED*")]
     static void Build_Compressed()
     {
         BuildAllAssetBundles(BuildAssetBundleOptions.ChunkBasedCompression);
+    }
+    [MenuItem("Madness/AssetBundle/ >> Build (Uncompressed)")]
+    static void Build_Uncompressed()
+    {
+        BuildAllAssetBundles(BuildAssetBundleOptions.UncompressedAssetBundle);
     }
 
     static void BuildAllAssetBundles(BuildAssetBundleOptions inBuildOption)

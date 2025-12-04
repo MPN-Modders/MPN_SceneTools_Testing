@@ -215,6 +215,9 @@ public class RoomObj_Editor : Editor
 		RenderSettings.fogMode = thisRoom.FogMode;
 		RenderSettings.fogStartDistance = thisRoom.FogLinearStartEnd.x;
 		RenderSettings.fogEndDistance = thisRoom.FogLinearStartEnd.y;
+
+		// Global Fog
+		devCam.GetComponent<UnityStandardAssets.ImageEffects.GlobalFog>().enabled = thisRoom.CameraPoint.GetComponent<UnityStandardAssets.ImageEffects.GlobalFog>() && thisRoom.CameraPoint.GetComponent<UnityStandardAssets.ImageEffects.GlobalFog>().enabled;
 	}
 
 }
