@@ -27,8 +27,6 @@ public class CustomObj_Seat : ProxyObj_Seat
     [Tooltip("The usage text for entering this Seat.")]
     public string ExitText = "Exit";
 
-    // [ALREADY MOVED] ProxyObj_REPOSITORY has Vocation Requirement/Prohbited and AmLocked
-
     [Header("       SFX")]
     [Space(10)]
     public string SoundEnter; // NOTE: These are used by Repository/Door and thus must be remade in those CustomObj scripts too. This is because of how inherritance works with CustomObj and Proxies.
@@ -53,4 +51,14 @@ public class CustomObj_Seat : ProxyObj_Seat
     public List<string> AllowedSerials = new List<string>();
     [Tooltip("These GameObjects will be set to active when Seat is occupied, and disabled when not.")]
     public GameObject[] EnabledOnOccupied = new GameObject[0];
+
+    [Space(5)]
+    [Header(" == VESSELS == ")]
+    [Space(20)]
+    [Tooltip("The name of the DriverCard that will override any attached Vessel's DriverCard when this Seat is occupied by an NPC. Overrides DriverCard on the attached Vessel.")]
+    public string DriverCard;
+    [Tooltip("The name of the DriverCard that will override any attached Vessel's DriverCard when this Seat is occupied by Player 1. Overrides DriverCard on this Seat.")]
+    public string DriverCard_Player;
+
+
 }
