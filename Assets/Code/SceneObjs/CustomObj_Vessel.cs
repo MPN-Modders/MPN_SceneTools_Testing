@@ -23,5 +23,7 @@ public class CustomObj_Vessel : MonoBehaviour
     [Tooltip("If assigned, the Y position of this Vessel will always snap to the closest point above FloorCollider.")]
     public Collider FloorCollider;          
     [Tooltip("Force this Vessel to always remain upright.")]
-    public bool EnforceUpY = false;         
+    public bool EnforceUpY = false;
+    [Tooltip("These colliders will ignore collisions with the user of a linked Seat.")]
+    public Collider[] CollidersIgnoreUser = new Collider[0];
 }

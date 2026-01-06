@@ -26,8 +26,6 @@ public class DriverAction_PHYSICS : DriverAction
 
 	[Tooltip("This DriverAction will have no influence if the Vessel doesn't match the current Floor-contact status.")]
 	public ActiveWhen AmActiveWhen = ActiveWhen.TouchingFloor;
-
-
 }
 public class DriverAction_DIVERSE : DriverAction_PHYSICS
 {
