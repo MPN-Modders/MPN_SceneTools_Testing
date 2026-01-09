@@ -26,4 +26,8 @@ public class CustomObj_Vessel : MonoBehaviour
     public bool EnforceUpY = false;
     [Tooltip("These colliders will ignore collisions with the user of a linked Seat.")]
     public Collider[] CollidersIgnoreUser = new Collider[0];
+    [Tooltip("Rigidbody collisions with terrain will multiply the speed of impact by this multiplier, and then apply as damage to a linked Destructible.")]
+    public float CollisionDamageMult = 1;
+    [Tooltip("Collision strength with terrain must be at or above this value for the hit to count as damage, or trigger the Collision check.")]
+    public float ImpactThreshold = 5;
 }
