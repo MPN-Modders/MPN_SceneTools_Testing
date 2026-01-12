@@ -16,6 +16,8 @@ public class CustomObj_Vessel : MonoBehaviour
     [Tooltip("All Animators that will accept parameter changes from attached DriverCard.")]
     public Animator[] LinkedAnimators = new Animator[0];
 
+    [Tooltip("(Player only): The aim reticle will be visible while occupying this Seat.")]
+    public bool AimReticleOn = false;
     [Tooltip("If Player One is occupying LinkedSeat, this will be where the game camera focuses.")]
     public Transform PlayerUserFocalPoint;  
     [Tooltip("If assigned, the Y position of this Vessel will always be the same as FloorReference.")]
