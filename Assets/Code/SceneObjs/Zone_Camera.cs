@@ -21,19 +21,19 @@ public class Zone_Camera : Marker
     [Tooltip("Like the CameraPoint of a room.")]
     public Camera CameraPoint;
     [Tooltip("The number of frames it takes the camera to transition into and out of this zone's control.")]
-    public float TransitionFrames = 40; 
+    public float TransitionFrames = 40;
 
     [Range(0, 1)]
     [Space(10)]
-    [Tooltip("How much the zone will move the camera.\n0 is a fully stationary camera.")]
+    [Tooltip("How much the zone will move the camera to follow the camera's focus (typically Player 1).\n\n0 is a fully stationary camera. 1 will follow the player's movement exactly.")]
     public float StationaryModifier = 1;    // How much to allow you to move.
     [Range(0, 1)]
-    [Tooltip("How much the camera is affected by this zone.")]
+    [Tooltip("How much the game camera is affected by this zone.")]
     public float Influence = 1;             // How much this camera will take over for the main camera. 1 is all the way. 0 lets the normal camera do its thing.
     [Range(0, 1)]
-    [Tooltip("For softly transitioning into a zone.")]
+    [Tooltip("For softly transitioning into a zone when outside the InfluenceDistanceStart value. A value of 0 ignores this entirely.")]
     public float InfluenceByDistance = 0;   // Distance from Camera Target will lower the influence by this %.
-    [Tooltip("How far from the center of the zone do we start tracking InfluenceByDistance.")]
+    [Tooltip("How far the game camera's focus (typically Player 1) must be from my CameraPoint before InfluenceByDistance kicks in.\n\n(That is, if the Player is within this distance from CameraPoint, we use our full Infliuence).")]
     public float InfluenceDistanceStart = 3;// Only useful if IndluenceByDistance is being used (aka > 0)
 
     [Range(0, 1)]
