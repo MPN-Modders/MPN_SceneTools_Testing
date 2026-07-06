@@ -32,10 +32,12 @@ public class ProxyObj_Door : ProxyObj_REPOSITORY
 
     [Header("  == USE BOOLS == ")]
     [Space(10)]
-    [Tooltip("Disable the room that sends you to this door.")]
-    public bool NoReturn;
-    [Tooltip("This door is usable even if the room is locked down.")]
+    //[Tooltip("Disable the room that sends you to this door.")]
+    //public bool NoReturn; // REMOVED: No MPN functionality.
+    [Tooltip("This door is usable even when enemies are present in the room.")]
     public bool IgnoreLockdown;
+    [Tooltip("This door is usable even if the room is in total lockdown during mission waves.")]
+    public bool IgnoreMissionLockdown;
     public bool UserInvincible;
     public bool UserUntargetable;
     public bool UserIntangible;

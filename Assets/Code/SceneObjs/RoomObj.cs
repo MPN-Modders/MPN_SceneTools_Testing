@@ -26,6 +26,7 @@ public class RoomObj : ProxyObj
         Ignored,    // Enemies do not lock the doors when present (as per Overworld Hubs)
         Forced,     // Enemies always lock the doors when present.
     }
+    [Tooltip("Default: Stages lock their doors, Overworld Hubs do not. \nIgnored: Enemies do not lock the doors when present. \nForced: Enemies always lock the doors when present.")]
     [Space(5)]
     public LeaveLock LeaveLockRules = LeaveLock.Default;
 
