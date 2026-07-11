@@ -107,6 +107,11 @@ public class CustomObj_Destructible : ProxyObj_Base
 	public Transform ExplodePoint;              // Where do we splode?
 
 
+	// SIEGE //
+	[Space(10)]
+	[Tooltip("During Arena Siege missions, enemies will target this collider when sent after a SiegeTargets/Walls/Shortucts.")]
+	public Collider SiegeTargetCollider;
+
 	// Arming & Tasks //
 	[Space(20)]
 	[Header("     =============    ")]

@@ -59,4 +59,12 @@ public class RoomObj : ProxyObj
     public GameObject WaypointFolder;
     public GameObject BackgroundFolder;
 
+    [Header("  == ARENA INFILTRATION == ")]
+    [Space(5)]
+    [Tooltip("In Infiltration stages, these are the paths unaware enemies may patrol.")]
+    public PatrolPath_STP[] PatrolPaths = new PatrolPath_STP[0];
+    [Tooltip("In Infiltration stages, these are the points where enemies may be posted.")]
+    public Marker_Waypoint[] GuardPoints = new Marker_Waypoint[0];
+    [Tooltip("For items that should be respawned fresh each time this room is visited, such as medical cabinets.")]
+    public GameObject[] ToysToResetOnReEnter = new GameObject[0];
 }

@@ -146,4 +146,11 @@ public enum BonusType
     __Headquarters__ = 800, HirelingRecoveryTime,
 
 }
-
+public enum WalkOrder
+{
+    NEVER,                  // Never walk during this order.
+    ALWAYS,                 // Always walk during this order
+    DEFAULT,                // DEFAULT is "While Unaware"
+    WhileTargetUnseen,      // If I can't see my target AND I'm unaware, then walk
+    RunDontSprint           // Never walk, but never Sprint either.
+};

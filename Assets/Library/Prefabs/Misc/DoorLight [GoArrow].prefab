@@ -314,6 +314,7 @@ GameObject:
   - component: {fileID: 8377560686094268856}
   - component: {fileID: 1727412143609663132}
   - component: {fileID: 742087900}
+  - component: {fileID: 5276142947288817874}
   m_Layer: 0
   m_Name: DoorLight [GoArrow]
   m_TagString: Untagged
@@ -376,6 +377,20 @@ MonoBehaviour:
   mustBeSeenByCamera: 1
   override_PlayFromThisObject: {fileID: 8377560686094268856}
   SoundEventVolMult: 0.6
+--- !u!114 &5276142947288817874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8738251827085254188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343180f80a928e940b55e83a80441ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SerialNumber: 
+  AttachToDoor: {fileID: 0}
 --- !u!1001 &4544298495291716762
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -458,16 +473,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.9912355
       objectReference: {fileID: 0}
-    - target: {fileID: 1684823909912944591, guid: db9db4138e07caf4c81095c304cd4e21,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 42551a03bf26d944c90af4e9af3a687a, type: 2}
     - target: {fileID: 1132785446094746621, guid: db9db4138e07caf4c81095c304cd4e21,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1684823909912944591, guid: db9db4138e07caf4c81095c304cd4e21,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 42551a03bf26d944c90af4e9af3a687a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db9db4138e07caf4c81095c304cd4e21, type: 3}
 --- !u!4 &2914151171621284692 stripped
@@ -558,16 +573,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 45.26007
       objectReference: {fileID: 0}
-    - target: {fileID: 1684823909912944591, guid: db9db4138e07caf4c81095c304cd4e21,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 42551a03bf26d944c90af4e9af3a687a, type: 2}
     - target: {fileID: 1132785446094746621, guid: db9db4138e07caf4c81095c304cd4e21,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1684823909912944591, guid: db9db4138e07caf4c81095c304cd4e21,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 42551a03bf26d944c90af4e9af3a687a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db9db4138e07caf4c81095c304cd4e21, type: 3}
 --- !u!4 &7827916512632237766 stripped
