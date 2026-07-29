@@ -7,17 +7,17 @@ public class SceneEditorHelpers
 }
 
 // INACCESIBLE PARENT CLASSES
-public class SceneObj : MonoBehaviour
+public abstract class SceneObj : MonoBehaviour
 {
     public string SerialNumber = "";
 }
-public class Marker : SceneObj
+public abstract class Marker : SceneObj
 {
 }
-public class ProxyObj : SceneObj
+public abstract class ProxyObj : SceneObj
 {
 }
-public class ProxyObj_Base : ProxyObj
+public abstract class ProxyObj_Base : ProxyObj
 {
     // For Non-Rooms
 }

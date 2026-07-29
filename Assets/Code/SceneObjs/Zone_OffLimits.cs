@@ -14,7 +14,7 @@ public class Zone_OffLimits : RestrictedZone
     public GameObject DespawnEffect;
 }
 
-public class RestrictedZone : AreaZone
+public abstract class RestrictedZone : AreaZone
 {
     [Space(10)]
     [Tooltip("Weapons that fall into this zone become unusable.")]
@@ -28,7 +28,7 @@ public class RestrictedZone : AreaZone
     public bool SendToClosest = true;
 }
 
-public class AreaZone : Marker
+public abstract class AreaZone : Marker
 {
 
 }
