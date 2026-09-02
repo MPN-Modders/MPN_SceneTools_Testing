@@ -10,7 +10,7 @@ public class SceneRules : MonoBehaviour
     [Header(" == ARENA ==")][Space(20)]
     [Tooltip("Optional: Waves will not automatically start unless this interactive has been used.")]
     public ProxyObj_Interact ArenaStartButton;
-    [Tooltip("Lock/Unlock these Interactives automatically during/after waves.")]
+    [Tooltip("Lock/Unlock these Interactives automatically during/after Arena waves. NOTE: Does nothing during Infiltrate stages.")]
     public List<ProxyObj_Interact> LockedDuringWaves = new List<ProxyObj_Interact>();
     [Tooltip("The Interactives and/or Destructibles the player should protect during Siege stages. Only targets that are CURRENTLY ACTIVE will be assigned to the current attackers.")]
     public List<ProxyObj_Base> SiegeTargets = new List<ProxyObj_Base>();

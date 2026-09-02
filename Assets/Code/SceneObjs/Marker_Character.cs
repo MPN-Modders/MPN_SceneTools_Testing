@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using System.Collections.Generic;
 public class Marker_Character : Marker_DataAssigner
 {
     [Space(6)]
@@ -18,6 +18,7 @@ public class Marker_Character : Marker_DataAssigner
     public string Held_R, Held_L, Stow_R, Stow_L, Thrown;
     [Tooltip("The MadCards of the armor to equip.")]
     public string[] Worn = new string[0];
+    public List<Marker_Dummy.UniformWearable_JSON> Uniforms = new List<Marker_Dummy.UniformWearable_JSON>();
     [Tooltip("The MadCard of a Keycard (C4, Blue Key, etc.) to carry.")]
     public string Keycard;
 
